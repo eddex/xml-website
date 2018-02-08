@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--wrong month Enum-->
 <offers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="offer.xsd">
     <offer id="1">
@@ -26,7 +26,7 @@
         <price>10.00</price>
         <course courseId="1" date="10.02.2018" time="08:00" duration="4" trainer="Ruth Reichmuth" maxParticipants="25" />
         <course courseId="2" date="12.02.2018" time="14:00" duration="4" trainer="Florian Hardegger" maxParticipants="25" />
-        <description>Wandern ist Gehen in der Landschaft. Dabei handelt es sich um eine Freizeitaktivität mit unterschiedlich starker körperlicher Anforderung.</description>
+        <description>Wandern ist Gehen in der Landschaft. Dabei handelt es sich um eine FreizeitaktivitÃ¤t mit unterschiedlich starker k?rperlicher Anforderung.</description>
     </offer>
     <offer id="4">
         <title>Joggen</title>
