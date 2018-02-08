@@ -4,98 +4,70 @@
     <offer id="1">
         <title>Basketball</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="14" />
-        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="14" />
-        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="14" />
-        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="14" />
-        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="14" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="14" />
+        <course courseId="2" date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="14" />
+        <course courseId="3" date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="14" />
+        <course courseId="4" date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="14" />
+        <course courseId="5" date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="14" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
     </offer>
     <offer id="2">
         <title>Handball</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="18" />
-        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
-        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="18" />
-        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
-        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="18" />
+        <course courseId="2" date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
+        <course courseId="3" date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="18" />
+        <course courseId="4" date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
+        <course courseId="5" date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
         <description>Handball ist eine Sportart, bei der zwei Mannschaften mit je sieben Spielern (sechs Feldspieler und ein Torwart) gegeneinander spielen. Das Ziel des Spiels besteht darin, den Handball in das gegnerische Tor zu werfen und damit ein Tor zu erzielen.</description>
     </offer>
     <offer id="3">
         <title>Wandern</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="4" trainer="Ruth Reichmuth" maxParticipants="25" />
-        <dateTime date="12.02.2018" time="14:00" duration="4" trainer="Florian Hardegger" maxParticipants="25" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="4" trainer="Ruth Reichmuth" maxParticipants="25" />
+        <course courseId="2" date="12.02.2018" time="14:00" duration="4" trainer="Florian Hardegger" maxParticipants="25" />
         <description>Wandern ist Gehen in der Landschaft. Dabei handelt es sich um eine Freizeitaktivität mit unterschiedlich starker körperlicher Anforderung.</description>
     </offer>
     <offer id="4">
         <title>Joggen</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="10" />
-        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
     </offer>
     <offer id="5">
         <title>Sauna</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="10" />
-        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
     </offer>
     <offer id="6">
         <title>Wellness</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="10" />
-        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
     </offer>
     <offer id="7">
         <title>Basketball</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="10" />
-        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
     </offer>
     <offer id="8">
         <title>Basketball</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="10" />
-        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
     </offer>
     <offer id="9">
         <title>Basketball</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="10" />
-        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
     </offer>
     <offer id="10">
         <title>Basketball</title>
         <price>10.00</price>
-        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="10" />
-        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
-        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
     </offer>
 </offers>

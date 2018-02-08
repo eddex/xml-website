@@ -22,15 +22,16 @@ and open the template in the editor.
             <xs:sequence>
                 <xs:element name="title" type="xs:string" />
                 <xs:element name="price" type="xs:decimal" />
-                <xs:element ref="dateTime" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="course" minOccurs="1" maxOccurs="unbounded"/>
                 <xs:element name="description" type="xs:string" />
             </xs:sequence>
             <xs:attribute name="id" type="xs:integer" use="required" />
         </xs:complexType>
     </xs:element>
     
-    <xs:element name="dateTime">
+    <xs:element name="course">
         <xs:complexType>
+            <xs:attribute name="courseId" type="xs:integer" use="required" />
             <xs:attribute name="date" type="dateType" use="required" />
             <xs:attribute name="time" type="timesType" use="required" />
             <xs:attribute name="duration" type="xs:integer" use="required" />
