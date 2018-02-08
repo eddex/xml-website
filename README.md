@@ -7,7 +7,7 @@ A web project based on XML technologies
 2. in IntelliJ go to File > Settings > Languages & Frameworks > Schemas & DTDs
 3. Add new External Schema with URI *http://www.w3.org/1999/XSL/Format* and the XSL:FO schema from step 1
 
-### error when opening a page in the browser
+### error or empty page when opened in the browser
 * do not use a browser that has the [METAMASK](https://metamask.io/) extension installed, otherwise everything crashes
 and you will be reconsidering all the choices you have taken in your life ¯\\_(ツ)_/¯
 
