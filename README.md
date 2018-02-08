@@ -27,4 +27,3 @@ and you will be reconsidering all the choices you have taken in your life ¯\\_(
 ## open source software
 * [Glyphicons from Twitter Bootstrap](https://github.com/twbs/bootstrap/)
 * [Bootstrap "Flatly" theme](https://bootswatch.com/flatly/)
-* [Bootstrap "Cyborg" theme](https://bootswatch.com/cyborg/)

@@ -14,7 +14,8 @@
     <xsl:template match="/">
         <html>
             <head>
-                <meta name="description" content="This is a the offer overview page." />
+                <meta name="description" content="Hier finden Sie eine Übersicht aller Angebote." />
+                <!-- CSS FRAMEWORKS -->
                 <link rel="stylesheet" href="css/flatly.bootstrap.min.css" />
                 <link rel="stylesheet" href="css/flatly.custom.min.css" />
                 <link rel="stylesheet" href="css/glyphicon.css" />
