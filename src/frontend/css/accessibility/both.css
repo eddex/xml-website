@@ -1,0 +1,18 @@
+/* just big.font.size.css and high.contrast.css in one file. */
+
+*, .navbar {
+    color: white !important;
+    background: black !important;
+}
+
+.card {
+	border: 1px solid #2A9FD6;
+}
+
+.btn-primary {
+    border-color: #2A9FD6;
+}
+
+.lead, .btn, h5, .navbar-brand {
+    font-size: 1.7rem !important;
+}

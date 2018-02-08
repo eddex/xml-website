@@ -21,6 +21,10 @@ and you will be reconsidering all the choices you have taken in your life ¯\\_(
 * use a constant XSLT variable: [xml.com](https://www.xml.com/pub/a/2002/03/06/xslt.html)
 * same thing but different: [techrepublic.com](https://www.techrepublic.com/article/accessing-multiple-documents-with-xslt/)
 
+### how to use glyphicons
+* [referencce on w3schools](https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp)
+
 ## open source software
 * [Glyphicons from Twitter Bootstrap](https://github.com/twbs/bootstrap/)
 * [Bootstrap "Flatly" theme](https://bootswatch.com/flatly/)
+* [Bootstrap "Cyborg" theme](https://bootswatch.com/cyborg/)

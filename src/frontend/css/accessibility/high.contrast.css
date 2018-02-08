@@ -1,0 +1,14 @@
+/* overrides some rules of the bootstrap framework to create a high contrast theme. */
+
+*, .navbar {
+    color: white !important;
+    background: black !important;
+}
+
+.card {
+	border: 1px solid #2A9FD6;
+}
+
+.btn-primary {
+    border-color: #2A9FD6;
+}

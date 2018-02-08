@@ -18,48 +18,25 @@
                 <link rel="stylesheet" href="css/flatly.bootstrap.min.css" />
                 <link rel="stylesheet" href="css/flatly.custom.min.css" />
                 <link rel="stylesheet" href="css/glyphicon.css" />
+                <!-- ACCESSIBILITY STYLES -->
+                <link id="style" rel="stylesheet" href="css/accessibility/none.css" />
             </head>
-            <body>
+            <body onload="restoreStyle()">
 
                 <!-- NAVBAR -->
                 <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
 
                     <div class="container">
                         <a href="." class="navbar-brand">Unsere Tolle Sportanlage</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <span class="nav-link">Design auswählen: </span>
-                                </li>
-                                <li class="nav-item">
-                                    <span class="nav-link">
-                                        Grosser Text
-                                        <span class="glyphicon glyphicon-text-size"></span>
-                                    </span>
-                                </li>
-                                <li class="nav-item">
-                                    <span class="nav-link">
-                                        Hoher Kontrast
-                                        <span class="glyphicon glyphicon-text-background"></span>
-                                    </span>
-                                </li>
-                            </ul>
-
-                        </div>
                     </div>
-
                 </div>
 
                 <!-- CONTENT -->
                 <div class="container">
-
+                    <!-- HEAD -->
                     <div class="page-header" id="banner">
                         <div class="row">
-                            <div class="col-lg-8 col-md-7 col-sm-6">
+                            <div class="col-lg-8">
                                 <h1>Willkommen</h1>
                                 <p class="lead">
                                     In unserem Sportzentrum können sie tolle sachen machen.
@@ -71,14 +48,60 @@
                                 </p>
                             </div>
                         </div>
+                        <!-- PAGE DESIGN CHOICE -->
                         <div class="row">
-
+                            <div class="col-lg-12">
+                                <h3>Design</h3>
+                                <p class="lead">
+                                    Wählen sie ein Design für die Webseite, welches ihren Ansprüchen entspricht.
+                                </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="bs-component">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('big.font.size')">
+                                        Grosser Text
+                                        <span class="glyphicon glyphicon-text-size"></span>
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="bs-component">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block"  onclick="changeToStyle('high.contrast')">
+                                        Hoher Kontrast
+                                        <span class="glyphicon glyphicon-text-background"></span>
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="bs-component">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('both')">
+                                        Beides
+                                        <span class="glyphicon glyphicon-text-size"></span>
+                                        <span class="glyphicon glyphicon-text-background"></span>
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="bs-component">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('none')">
+                                        Nichts
+                                        <span class="glyphicon glyphicon-sunglasses"></span>
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- OFFERS -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3>Angebot</h3>
+                            </div>
                             <xsl:apply-templates select="$offers"/>
 
                         </div>
                     </div>
 
                 </div>
+                <script src="js/style.js"></script>
             </body>
         </html>
     </xsl:template>
@@ -86,10 +109,12 @@
 
     <!-- display all offers  -->
     <xsl:template match="offer">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <div class="bs-component">
                 <div class="card mb-3">
-                    <img style="height: 200px; width: 100%; display: block;" src="" alt="Card image" />
+                    <img style="min-height: 200px; width: 100%; display: block;"
+                         src="https://image.shutterstock.com/z/stock-photo-businessman-ready-to-commit-suicide-93915967.jpg"
+                         alt="Card image" />
                     <h3 class="card-header"><xsl:value-of select="title/text()" /></h3>
                     <div class="card-body">
                         <h5 class="card-title"><xsl:value-of select="description/text()" /></h5>
