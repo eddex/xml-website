@@ -50,6 +50,7 @@
                             </div>
                         </div>
                         <!-- PAGE DESIGN CHOICE -->
+                        <div class="bs-docs-section clearfix"></div>
                         <div class="row">
                             <div class="col-lg-12">
                                 <h3>Design</h3>
@@ -92,6 +93,7 @@
                             </div>
                         </div>
                         <!-- OFFERS -->
+                        <div class="bs-docs-section clearfix"></div>
                         <div class="row">
                             <div class="col-lg-12">
                                 <h3>Angebot</h3>
