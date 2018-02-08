@@ -50,61 +50,63 @@
                             </div>
                         </div>
                         <!-- PAGE DESIGN CHOICE -->
-                        <div class="bs-docs-section clearfix"></div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h3>Design</h3>
-                                <p class="lead">
-                                    Wählen sie ein Design für die Webseite, welches ihren Ansprüchen entspricht.
-                                </p>
-                            </div>
-                            <div class="col-lg-3">
-                                <p class="bs-component">
-                                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('big.font.size')">
-                                        Grosser Text
-                                        <span class="glyphicon glyphicon-text-size"></span>
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="col-lg-3">
-                                <p class="bs-component">
-                                    <button type="button" class="btn btn-primary btn-lg btn-block"  onclick="changeToStyle('high.contrast')">
-                                        Hoher Kontrast
-                                        <span class="glyphicon glyphicon-text-background"></span>
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="col-lg-3">
-                                <p class="bs-component">
-                                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('both')">
-                                        Beides
-                                        <span class="glyphicon glyphicon-text-size"></span>
-                                        <span class="glyphicon glyphicon-text-background"></span>
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="col-lg-3">
-                                <p class="bs-component">
-                                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('none')">
-                                        Nichts
-                                        <span class="glyphicon glyphicon-sunglasses"></span>
-                                    </button>
-                                </p>
+                        <div class="bs-docs-section clearfix">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3>Design</h3>
+                                    <p class="lead">
+                                        Wählen sie ein Design für die Webseite, welches ihren Ansprüchen entspricht.
+                                    </p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p class="bs-component">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('big.font.size')">
+                                            Grosser Text
+                                            <span class="glyphicon glyphicon-text-size"> </span>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p class="bs-component">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block"  onclick="changeToStyle('high.contrast')">
+                                            Hoher Kontrast
+                                            <span class="glyphicon glyphicon-text-background"> </span>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p class="bs-component">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('both')">
+                                            Beides
+                                            <span class="glyphicon glyphicon-text-size"> </span>
+                                            <span class="glyphicon glyphicon-text-background"> </span>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p class="bs-component">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('none')">
+                                            Nichts
+                                            <span class="glyphicon glyphicon-sunglasses"> </span>
+                                        </button>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <!-- OFFERS -->
-                        <div class="bs-docs-section clearfix"></div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h3>Angebot</h3>
+                        <div class="bs-docs-section clearfix">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3>Angebot</h3>
+                                </div>
+                                <xsl:apply-templates select="$offers"/>
                             </div>
-                            <xsl:apply-templates select="$offers"/>
-
                         </div>
+
                     </div>
 
                 </div>
-                <script src="js/style.js"></script>
+                <script src="js/style.js"> </script>
             </body>
         </html>
     </xsl:template>
