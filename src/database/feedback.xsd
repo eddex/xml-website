@@ -9,17 +9,19 @@
     </xs:element>
     <xs:element name="feedback">
         <xs:complexType>
-            <xs:element ref="rating" />
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element ref="rating" />
+            </xs:sequence>
             <xs:attribute name="offerID" type="xs:integer" use="required" />
         </xs:complexType>
     </xs:element>
     <xs:element name="rating">
         <xs:complexType>
-            <xs:attribute name="fun" type="xs:ratingType"  use="required"/>
-            <xs:attribute name="difficulty" type="xs:ratingType"  use="required"/>
-            <xs:attribute name="effort" type="xs:ratingType"  use="required"/>
-            <xs:attribute name="staff" type="xs:ratingType"  use="required"/>
-            <xs:attribute name="cost-effectiveness" type="xs:ratingType"  use="required"/>
+            <xs:attribute name="fun" type="ratingType"  use="required"/>
+            <xs:attribute name="difficulty" type="ratingType"  use="required"/>
+            <xs:attribute name="effort" type="ratingType"  use="required"/>
+            <xs:attribute name="staff" type="ratingType"  use="required"/>
+            <xs:attribute name="cost-effectiveness" type="ratingType"  use="required"/>
         </xs:complexType>
     </xs:element>
     <xs:simpleType name="ratingType">

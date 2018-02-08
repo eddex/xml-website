@@ -9,7 +9,7 @@
     </xs:element>
     
     <xs:complexType name="reservationType">
-        <xs:all>
+        <xs:sequence minOccurs="1" maxOccurs="1">
             <xs:element name="FirstName" type="xs:string" minOccurs="1" maxOccurs="1" />
             <xs:element name="LastName" type="xs:string" />
             <xs:element name="Address" type="xs:string" />
@@ -17,7 +17,7 @@
             <xs:element name="PLZ" type="PLZType" />
             <xs:element name="Mail" type="emailAddressType" />
             <xs:element name="PhoneNumber" type="phoneNumberType" />
-        </xs:all>
+        </xs:sequence>
         <xs:attribute name="offerID" type="xs:integer" use="required" />
     </xs:complexType>
 
