@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Reservations">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="Reservation" type="reservationType" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="reservationType">
+        <xs:all>
+            <xs:element name="FirstName" type="xs:string" minOccurs="1" maxOccurs="1" />
+            <xs:element name="LastName" type="xs:string" />
+            <xs:element name="Address" type="xs:string" />
+            <xs:element name="City" type="xs:string" />
+            <xs:element name="PLZ" type="PLZType" />
+            <xs:element name="Mail" type="emailAddressType" />
+            <xs:element name="PhoneNumber" type="phoneNumberType" />
+        </xs:all>
+        <xs:attribute name="offerID" type="xs:integer" use="required" />
+    </xs:complexType>
+
+
+    <xs:simpleType name="PLZType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="9999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="phoneNumberType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="1000000000" />
+            <xs:maxInclusive value="9999999999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailAddressType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
