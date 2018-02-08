@@ -2,6 +2,12 @@
 A web project based on XML technologies
 
 ## problems, solutions & usefull stuff
+
+### my xsd desn't work :(
+* make sure you use a **good** IDE.
+* Atom, Sublime, VS Code etc. are cool but are horrible at validating XSDs
+* use IntelliJ, NetBeans or another IDE with proper XML/XSD/XSLT/FO/SVG validation
+
 ### FO-XML namespace not found in IntelliJ
 1. download XML schema [XSL:FO](https://svn.apache.org/repos/asf/xmlgraphics/fop/trunk/fop/src/foschema/fop.xsd)
 2. in IntelliJ go to File > Settings > Languages & Frameworks > Schemas & DTDs
