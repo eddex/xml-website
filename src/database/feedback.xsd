@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="feedback">
+        <xs:complexType>
+            <xs:attribute name="offerID" type="xs:integer" use="required"/>
+
+            <xs:element name="rating">
+                <xs:complexType>
+                    <xs:attribute name="fun" type="xs:ratingType"  use="required"/>
+                    <xs:attribute name="difficulty" type="xs:ratingType"  use="required"/>
+                    <xs:attribute name="effort" type="xs:ratingType"  use="required"/>
+                    <xs:attribute name="staff" type="xs:ratingType"  use="required"/>
+                    <xs:attribute name="cost-effectiveness" type="xs:ratingType"  use="required"/>
+
+                    <xs:simpleType name="ratingType">
+                        <xs:restriction base="xs:short">
+                            <xs:minInclusive value="0"/>
+                            <xs:maxInclusive value="5"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:complexType>
+            </xs:element>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
