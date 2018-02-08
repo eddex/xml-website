@@ -23,16 +23,14 @@
 
 
     <xs:simpleType name="PLZType">
-        <xs:restriction base="xs:decimal">
-            <xs:minInclusive value="0" />
-            <xs:maxInclusive value="9999" />
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{4}"/>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="phoneNumberType">
-        <xs:restriction base="xs:decimal">
-            <xs:minInclusive value="1000000000" />
-            <xs:maxInclusive value="9999999999" />
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{10}"/>
         </xs:restriction>
     </xs:simpleType>
 
