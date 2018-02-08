@@ -16,6 +16,7 @@
             <head>
                 <meta name="description" content="This is a the offer overview page." />
                 <link rel="stylesheet" href="css/flatly.bootstrap.min.css" />
+                <link rel="stylesheet" href="css/flatly.custom.min.css" />
                 <link rel="stylesheet" href="css/glyphicon.css" />
             </head>
             <body>
@@ -54,7 +55,30 @@
                 </div>
 
                 <!-- CONTENT -->
-                <xsl:apply-templates select="$offers"/>
+                <div class="container">
+
+                    <div class="page-header" id="banner">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-7 col-sm-6">
+                                <h1>Willkommen</h1>
+                                <p class="lead">
+                                    In unserem Sportzentrum können sie tolle sachen machen.
+                                    Soluta quas sit sint voluptatem ratione qui et dolore.
+                                    Eligendi quidem aspernatur et et consectetur.
+                                    Sunt eos necessitatibus mollitia culpa aut distinctio.
+                                    Hic quasi rerum eos repellat quia aliquam et.
+                                    Eius sit necessitatibus est. Praesentium qui rem deserunt delectus rem et.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <xsl:apply-templates select="$offers"/>
+
+                        </div>
+                    </div>
+
+                </div>
             </body>
         </html>
     </xsl:template>
@@ -62,9 +86,17 @@
 
     <!-- display all offers  -->
     <xsl:template match="offer">
-        <p>
-            <xsl:value-of select="title/text()" />
-        </p>
+        <div class="col-lg-4">
+            <div class="bs-component">
+                <div class="card mb-3">
+                    <img style="height: 200px; width: 100%; display: block;" src="" alt="Card image" />
+                    <h3 class="card-header"><xsl:value-of select="title/text()" /></h3>
+                    <div class="card-body">
+                        <h5 class="card-title"><xsl:value-of select="description/text()" /></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </xsl:template>
 
 
