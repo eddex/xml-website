@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="offers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="offer" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="offer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string" />
+                <xs:element name="price" type="xs:decimal" />
+                <xs:element name="timeFrames" type="timesType" />
+                <xs:element name="date" type="xs:date" />
+                <xs:element name="description" type="xs:string" />
+                <xs:element name="trainer" type="xs:string" />
+                <xs:element name="maxParticipants" type="xs:integer" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" use="required" />
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:simpleType name="timesType">
+            <xs:restriction base="xs:string">
+                    <xs:enumeration value="08:00-10:00"/>
+                    <xs:enumeration value="10:00-12:00"/>
+                    <xs:enumeration value="12:00-14:00"/>
+                    <xs:enumeration value="14:00-16:00"/>
+                    <xs:enumeration value="16:00-18:00"/>
+                    <xs:enumeration value="18:00-20:00"/>
+            </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
