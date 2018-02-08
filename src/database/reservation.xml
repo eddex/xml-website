@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Reservations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="reservation.xsd" >
-    <Reservation offerID="1">
+    <Reservation offerId="1" courseId="1">
         <FirstName>Trevor</FirstName>
         <LastName>Smith</LastName>
         <Address>Road 66</Address>
@@ -9,7 +9,7 @@
         <Mail>smithtrevor@gmail.com</Mail>
         <PhoneNumber>0791006564</PhoneNumber>
     </Reservation>
-    <Reservation offerID="2">
+    <Reservation offerId="1" courseId="2">
         <FirstName>Mary</FirstName>
         <LastName>Jane</LastName>
         <Address>Carlin Street</Address>
@@ -18,7 +18,7 @@
         <Mail>mjane@gmail.com</Mail>
         <PhoneNumber>0112206633</PhoneNumber>
     </Reservation>
-    <Reservation offerID="2">
+    <Reservation offerId="2" courseId="1">
         <FirstName>Bill</FirstName>
         <LastName>Borton</LastName>
         <Address>Westhaven Street</Address>
