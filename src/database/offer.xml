@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!--wrong month Enum-->
+<offers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="offer.xsd">
+    <offer id="1">
+        <title>Basketball</title>
+        <price>10.00</price>
+        <dateTime date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
+        <dateTime date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <dateTime date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="10" />
+        <dateTime date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <dateTime date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="20" />
+        <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+    </offer>
+</offers>
