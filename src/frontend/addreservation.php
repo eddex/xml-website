@@ -1,8 +1,19 @@
 <?php
 
-include 'example.php';
-
-function addreservation($FirstName, $LastName, $Address, $City, $PLZ, $Mail, $PhoneNumber, $OfferId, $CourseId) {
+//include 'example.php';
+echo "Hello World";
+/**
+ * @param $FirstName
+ * @param $LastName
+ * @param $Address
+ * @param $City
+ * @param $PLZ
+ * @param $Mail
+ * @param $PhoneNumber
+ * @param $OfferId
+ * @param $CourseId
+ */
+function addReservation($FirstName, $LastName, $Address, $City, $PLZ, $Mail, $PhoneNumber, $OfferId, $CourseId) {
     //new elements
     $FirstName ="Trevor";
     $LastName = "Smith";
@@ -17,32 +28,31 @@ function addreservation($FirstName, $LastName, $Address, $City, $PLZ, $Mail, $Ph
     $CourseId = "1";
 
     // file path, hardcoded because we only have 1 reservation file and this should not change
-    $FilePath = "../reservation.xml"
+    $FilePath = "..\\database\\reservation.xml";
 
     // load the reservation.xml
-    $reservationXml = new DOMDocument();
-    $reservationXml->load($FilePath);
+    $reservationXml =  simplexml_load_file($FilePath);
 
-    //******************** add childs and attributes ***************************
+    //******************** add child's and attributes ***************************
         // add a new reservation
-    $newReservation= $reservationXml->addChild('Reservation');
+    $newReservation = $reservationXml->addChild('Reservation');
 
         // new elements
-    $newReservation->addChild('FirstName','$FirstName')
-    $newReservation->addChild('LastName','$LastName')
-    $newReservation->addChild('Address','$Address')
-    $newReservation->addChild('City','$City')
-    $newReservation->addChild('PLZ','$PLZ')
-    $newReservation->addChild('Mail','$Mail')
-    $newReservation->addChild('PhoneNumber','$PhoneNumber')
+    $newReservation->addChild('FirstName',$FirstName);
+    $newReservation->addChild('LastName',$LastName);
+    $newReservation->addChild('Address',$Address);
+    $newReservation->addChild('City',$City);
+    $newReservation->addChild('PLZ',$PLZ);
+    $newReservation->addChild('Mail',$Mail);
+    $newReservation->addChild('PhoneNumber',$PhoneNumber);
 
         // new attributes
-    $newReservation->addAttribute('offerId', '$OfferId');
-    $newReservation->addAttribute('courseId', '$CourseId');
+    $newReservation->addAttribute('offerId', $OfferId);
+    $newReservation->addAttribute('courseId', $CourseId);
 
 
 
     ////******************** save changes to xml *******************************
-    $reservationXml->Save($FilePath);
+    $reservationXml->saveXML($FilePath);
 }
 ?>
