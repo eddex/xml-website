@@ -16,9 +16,9 @@
             <head>
                 <meta name="description" content="Hier finden Sie eine Übersicht aller Angebote." />
                 <!-- CSS FRAMEWORKS -->
-                <link rel="stylesheet" href="css/flatly.bootstrap.min.css" />
-                <link rel="stylesheet" href="css/flatly.custom.min.css" />
-                <link rel="stylesheet" href="css/glyphicon.css" />
+                <link rel="stylesheet" href="css/lib/flatly.bootstrap.min.css" />
+                <link rel="stylesheet" href="css/lib/flatly.custom.min.css" />
+                <link rel="stylesheet" href="css/lib/glyphicon.css" />
                 <!-- ACCESSIBILITY STYLES -->
                 <link id="style" rel="stylesheet" href="css/accessibility/none.css" />
             </head>
