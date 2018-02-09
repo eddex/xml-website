@@ -22,7 +22,7 @@
                 <!-- ACCESSIBILITY STYLES -->
                 <link id="style" rel="stylesheet" href="css/accessibility/none.css" />
             </head>
-            <body onload="restoreStyle()">
+            <body onload="restoreStyle('big.font.size')">
 
                 <!-- NAVBAR -->
                 <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
