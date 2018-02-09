@@ -1,6 +1,5 @@
 <?php
-    //addReservation("Trevor", "Smith", "Road 66", "Kentucky", "1992", "smithtrevor@gmail.com", "0791006564",1,1);
-    echo 'it works';
+    addReservation("Trevor", "Smith", "Road 66", "Kentucky", "1992", "smithtrevor@gmail.com", "0791006564",1,1);
 
     /**
      * @param $FirstName
@@ -15,7 +14,7 @@
      */
     function addReservation($FirstName, $LastName, $Address, $City, $PLZ, $Mail, $PhoneNumber, $OfferId, $CourseId) {
         // file path, hardcoded because we only have 1 reservation file and this should not change
-        $FilePath = "..\\database\\reservation.xml";
+        $FilePath = "../database/reservation.xml";
 
         // load the reservation.xml
         $reservationXml =  simplexml_load_file($FilePath);
