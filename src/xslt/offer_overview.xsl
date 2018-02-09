@@ -106,7 +106,7 @@
                     </div>
 
                 </div>
-                <script src="js/style.js"> </script>
+                <script type="text/javascript" src="js/style.js"> </script>
             </body>
         </html>
     </xsl:template>
