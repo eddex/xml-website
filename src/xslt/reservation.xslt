@@ -33,11 +33,32 @@
     </xsl:template>
 
     <xsl:template match="//Reservation">
-        <fo:block-container>
-            <fo:block min-width="1000" max-width="1000" background-color="red">
-                <fo:block>Angebot: <xsl:value-of select="@offerId" /></fo:block>
-                <fo:block>Kurs: <xsl:value-of select="@courseId" /></fo:block>
-            </fo:block>
-        </fo:block-container>
+
+
+        <fo:table space-after.optimum="20pt" font-size="11pt">
+            <fo:table-column column-number="1"/>
+            <fo:table-column column-number="2"/>
+            <fo:table-column column-number="3"/>
+            <fo:table-column column-number="4"/>
+            <fo:table-body>
+                <fo:table-row>
+                    <fo:table-cell number-columns-spanned="2" padding-top="8pt" padding-bottom="4pt">
+                        <fo:block>
+                            <fo:external-graphic src="https://i.ytimg.com/vi/5dsGWM5XGdg/hqdefault.jpg" border-width="0cm" width="6cm" height="2pt"/>
+                        </fo:block>
+                    </fo:table-cell>
+                </fo:table-row>
+                <fo:table-row>
+                    <fo:table-cell number-columns-spanned="2" padding-top="8pt" padding-bottom="4pt">
+                        <fo:block-container>
+                            <fo:block min-width="1000" max-width="1000" background-color="red">
+                                <fo:block>Angebot: <xsl:value-of select="@offerId" /></fo:block>
+                                <fo:block>Kurs: <xsl:value-of select="@courseId" /></fo:block>
+                            </fo:block>
+                        </fo:block-container>
+                    </fo:table-cell>
+                </fo:table-row>
+            </fo:table-body>
+        </fo:table>
     </xsl:template>
 </xsl:stylesheet>
