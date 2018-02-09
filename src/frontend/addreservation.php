@@ -1,6 +1,6 @@
 <?php
     //addReservation("Trevor", "Smith", "Road 66", "Kentucky", "1992", "smithtrevor@gmail.com", "0791006564",1,1);
-
+    echo 'it works';
 
     /**
      * @param $FirstName
@@ -39,4 +39,3 @@
         // save changes to xml
         $reservationXml->saveXML($FilePath);
     }
-?>
