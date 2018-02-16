@@ -53,7 +53,7 @@
                     </fo:table-cell>
                 </fo:table-row>
 
-                <fo:table-row border-after-color="grey" border-after-style="solid">
+                <fo:table-row border-after-width="0.1" border-after-color="grey" border-after-style="solid">
                     <fo:table-cell column-number="2"  text-align="center">
                         <fo:block font-size="14pt" font-family="Georgia" color="white">
                             <fo:block><xsl:value-of select="$selectedOffer/title" /></fo:block>
@@ -67,13 +67,13 @@
                     </fo:table-cell>
                 </fo:table-row>
                 <fo:table-row>
-                    <fo:table-cell border-right-style="solid" border-right-color="grey">
+                    <fo:table-cell border-right-width="0.1" border-right-style="solid" border-right-color="grey">
                         <fo:block font-size="14pt" font-family="Georgia" color="white" text-align="center">
                             <fo:block><xsl:value-of select="$selectedCourse/@time" /><xsl:text> </xsl:text><xsl:value-of select="$selectedCourse/@date" /></fo:block>
                             <fo:block color="grey">Datum &amp; Zeit</fo:block>
                         </fo:block>
                     </fo:table-cell>
-                    <fo:table-cell border-right-style="solid" border-right-color="grey">
+                    <fo:table-cell border-right-width="0.1" border-right-style="solid" border-right-color="grey">
                         <fo:block font-size="14pt" font-family="Georgia" color="white" text-align="center">
                             <fo:block><xsl:value-of select="$selectedCourse/@trainer" /></fo:block>
                             <fo:block color="grey">Trainer</fo:block>
