@@ -7,10 +7,10 @@
  */
 require_once 'FO/fop_service_client.php';
 
-transformXmlToPdf();
 
-function transformXmlToPdf() {
+transformXmlToPdf('1', '1');
 
+function transformXmlToPdf($offerId, $courseId) {
     // file path, hardcoded because we only have 1 reservation file and this should not change
     $reservationXmlPath = "../../database/reservation.xml\"";
     $reservationFoPath = "FO/reservation.fo";
@@ -23,15 +23,12 @@ function transformXmlToPdf() {
     // transform to FO
     $processor = new XSLTProcessor();
     $processor->importStylesheet($xsl);
-    $processor->setParameter(null, offerID, "1");
-    $processor->setParameter(null, courseID, "1");
+    $processor->setParameter(null, 'offerID', $offerId);
+    $processor->setParameter(null, 'courseID', $courseId);
     $processor->transformToDoc($xml)->save($reservationFoPath);
 
 
-
-
-
-    /** service appears to be not available
+     //service appears to be not available
     // create an instance of the FOP client and perform service request.
     $serviceClient = new FOPServiceClient();
     $pdfFile = $serviceClient->processFile($reservationFoPath);
@@ -40,7 +37,7 @@ function transformXmlToPdf() {
     echo '<h1>FOP Service Client</h1>';
     echo sprintf('<p>Successfully rendered FO File<br><strong><a href="%s">%s</a></strong></p>', $foFile, $foFile);
     echo sprintf('<p>Generated PDF:<br><strong><a href="%s">%s</a></strong></p>', $pdfFile, $pdfFile);
-    */
+
 
 }
 ?>
