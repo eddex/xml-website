@@ -23,11 +23,13 @@ function transformXmlToPdf() {
     // transform to FO
     $processor = new XSLTProcessor();
     $processor->importStylesheet($xsl);
+    $processor->setParameter(null, offerID, "1");
+    $processor->setParameter(null, courseID, "1");
     $processor->transformToDoc($xml)->save($reservationFoPath);
 
-    // prints content to screen
-    //$file = file_get_contents($reservationFoPath);
-    //echo $file;
+
+
+
 
     /** service appears to be not available
     // create an instance of the FOP client and perform service request.
