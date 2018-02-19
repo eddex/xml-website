@@ -3,3 +3,7 @@ flatly.custom.min.css linguist-vendored=true
 glyphicon.css linguist-vendored=true
 bootstrap.min.js
 jquery.min.js
+
+fop_service_client.php
+http_client.php
+http_header.php
