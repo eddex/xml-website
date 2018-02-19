@@ -1,9 +1,9 @@
 flatly.bootstrap.min.css linguist-vendored=true
 flatly.custom.min.css linguist-vendored=true
 glyphicon.css linguist-vendored=true
-bootstrap.min.js
-jquery.min.js
+bootstrap.min.js linguist-vendored=true
+jquery.min.js linguist-vendored=true
 
-fop_service_client.php
-http_client.php
-http_header.php
+fop_service_client.php linguist-vendored=true
+http_client.php linguist-vendored=true
+http_header.php linguist-vendored=true
