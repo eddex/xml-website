@@ -9,8 +9,8 @@ require_once 'http_client.php';
 class FOPServiceClient {
 
     // service connection parameter
-    const SERVER = 'j4lfop.enterpriselab.ch';
-    const QUERY = '/fop/service.php';
+    const SERVER = 'j4lfop.abiz.ch';
+    const QUERY = 'fop.php';
 
     /**
      * @param string $foFilePath The filepath to the FO file to be rendered.
