@@ -15,7 +15,7 @@
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
 
         <div class="container">
-            <a href="../" class="navbar-brand">Unsere Tolle Sportanlage</a>
+            <a href="./index.xhtml" class="navbar-brand">Unsere Tolle Sportanlage</a>
         </div>
     </div>
 
@@ -46,7 +46,7 @@
                     <h1>
                         <?php
                         // only require this file once. works for the rest of the document.
-                        require 'php/offer_deatils.php';
+                        require 'php/offer_details.php';
                         printOfferTitle($_GET['id']);
                         ?>
                     </h1>
@@ -60,6 +60,6 @@
         </div>
     </div>
 
-<script type="text/javascript" src="js/style.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
 </body>
 </html>

@@ -115,17 +115,26 @@
     <!-- display all offers  -->
     <xsl:template match="offer">
         <div class="col-lg-6">
-            <div class="bs-component">
-                <div class="card mb-3">
-                    <img style="min-height: 200px; width: 100%; display: block;"
-                         src="https://image.shutterstock.com/z/stock-photo-businessman-ready-to-commit-suicide-93915967.jpg"
-                         alt="Card image" />
-                    <h3 class="card-header"><xsl:value-of select="title/text()" /></h3>
-                    <div class="card-body">
-                        <h5 class="card-title"><xsl:value-of select="description/text()" /></h5>
+            <xsl:element name="a">
+                <xsl:attribute name="href">
+                    details.php?id=<xsl:value-of select="@id"/>
+                </xsl:attribute>
+                <xsl:attribute name="style">
+                    color: black;
+                    text-decoration: none;
+                </xsl:attribute>
+                <div class="bs-component">
+                    <div class="card mb-3">
+                        <img style="min-height: 200px; width: 100%; display: block;"
+                             src="https://image.shutterstock.com/z/stock-photo-businessman-ready-to-commit-suicide-93915967.jpg"
+                             alt="Card image" />
+                        <h3 class="card-header"><xsl:value-of select="title/text()" /></h3>
+                        <div class="card-body">
+                            <h5 class="card-title"><xsl:value-of select="description/text()" /></h5>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </xsl:element>
         </div>
     </xsl:template>
 
