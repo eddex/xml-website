@@ -131,6 +131,10 @@
                         <h3 class="card-header"><xsl:value-of select="title/text()" /></h3>
                         <div class="card-body">
                             <h5 class="card-title"><xsl:value-of select="description/text()" /></h5>
+                            <button type="button" class="btn btn-info col-lg-12">
+                                Details und Registrierung
+                                <span class="glyphicon glyphicon-circle-arrow-right"> </span>
+                            </button>
                         </div>
                     </div>
                 </div>

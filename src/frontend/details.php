@@ -65,6 +65,21 @@
                 <div class="col-lg-12">
 
                     <h2>Bewertungen unserer Kunden</h2>
+                    <div class="bs-component">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Bewertung:
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </h5>
+                                <button type="button" class="btn btn-info text-right">Details öffnen</button>
+                            </div>
+                        </div>
+                    </div>
                     <!-- TODO: show feedback.  -->
 
                 </div>
@@ -88,7 +103,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <a href="index.xhtml">
-                        <button type="button" class="btn btn-info col-lg-12">zurück zur Übersicht</button>
+                        <button type="button" class="btn btn-info col-lg-12">
+                            <span class="glyphicon glyphicon-circle-arrow-left"> </span>
+                            zurück zur Übersicht
+                        </button>
                     </a>
                 </div>
             </div>
