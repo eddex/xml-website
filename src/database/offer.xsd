@@ -1,10 +1,4 @@
 <?xml version="1.0"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
@@ -41,20 +35,20 @@ and open the template in the editor.
     </xs:element>
     
     <xs:simpleType name="timesType">
-            <xs:restriction base="xs:string">
-                    <xs:enumeration value="08:00"/>
-                    <xs:enumeration value="10:00"/>
-                    <xs:enumeration value="12:00"/>
-                    <xs:enumeration value="14:00"/>
-                    <xs:enumeration value="16:00"/>
-                    <xs:enumeration value="18:00"/>
-            </xs:restriction>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="08:00"/>
+            <xs:enumeration value="10:00"/>
+            <xs:enumeration value="12:00"/>
+            <xs:enumeration value="14:00"/>
+            <xs:enumeration value="16:00"/>
+            <xs:enumeration value="18:00"/>
+        </xs:restriction>
     </xs:simpleType>
     
     <xs:simpleType name="dateType">
-            <xs:restriction base="xs:string">
-                <xs:pattern value="\d{2}[.]\d{2}[.]\d{4}"></xs:pattern>
-                    <xs:length value="10"/>
-            </xs:restriction>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}[.]\d{2}[.]\d{4}"/>
+            <xs:length value="10"/>
+        </xs:restriction>
     </xs:simpleType>
 </xs:schema>

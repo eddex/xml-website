@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--wrong month Enum-->
 <offers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="offer.xsd">
     <offer id="1">
         <title>Basketball</title>
