@@ -9,8 +9,8 @@ require_once 'http_client.php';
 class FOPServiceClient {
 
     // service connection parameter
-    const SERVER = 'j4lfop.abiz.ch';
-    const QUERY = 'fop.php';
+    const SERVER = 'https://j4lfop.abiz.ch';
+    const QUERY = '/fop.php';
 
     /**
      * @param string $foFilePath The filepath to the FO file to be rendered.
@@ -29,7 +29,16 @@ class FOPServiceClient {
         $pdfData = $this->renderFile($foData);
         $this->writeFile($pdfData, $pdfFilePath);
 
-        return $pdfFilePath;
+        $link = $this->createDownloadLink($pdfFilePath);
+        return $link;
+    }
+
+    private function createDownloadLink($filePath) {
+        $ret = pathinfo($filePath, PATHINFO_FILENAME);
+        $ext = pathinfo($filePath, PATHINFO_EXTENSION);
+        $ret .= (strlen($ext) == 0) ? '' : '.';
+        $fileName = $ret . $ext;
+        return sprintf ("download.php?file=%s", urlencode($fileName));
     }
 
     /**
@@ -59,17 +68,18 @@ class FOPServiceClient {
     private function renderFile($foData) {
 
         // call web service
-        $httpClient = new HTTPClient(self::SERVER);
+        $httpClient = new HTTPClient(self::SERVER, 443);
+        //$response = $httpClient->postRequest(self::QUERY, $foData);
         $response = $httpClient->postRequest(self::QUERY, $foData);
 
         // check result
-        $header = $response[0];
-        if ($header->getStatusCode() !== HTTPHeader::STATUS_OK) {
-            $error = sprintf('Request failed. Server responsed "%s - %s (%s)"', $header->getStatusCode(), $header->getStatusName(), $response[1]);
+        $status = $response[0];
+        if ($status !== HTTPClient::STATUS_OK) {
+            $error = sprintf('Request failed. Server returned HTTP code %s', $status);
             throw new RuntimeException($error);
         }
 
-        // return renedered PDF
+        // return rendered PDF
         $pdfData = $response[1];
         return $pdfData;
     }
