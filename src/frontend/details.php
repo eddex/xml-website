@@ -58,6 +58,41 @@
                 </div>
             </div>
         </div>
+
+        <!-- FEEDBACK -->
+        <div class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h2>Bewertungen unserer Kunden</h2>
+                    <!-- TODO: show feedback.  -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- RESERVATION -->
+        <div class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h2>Jetzt registrieren!</h2>
+                    <!-- TODO: show reservation form.  -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="index.xhtml">
+                        <button type="button" class="btn btn-info col-lg-12">zurück zur Übersicht</button>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script type="text/javascript" src="js/style.js"></script>
