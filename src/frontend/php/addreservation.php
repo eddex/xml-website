@@ -1,5 +1,7 @@
 <?php
-    //addReservation("Trevor", "Smith", "Road 66", "Kentucky", "1992", "smithtrevor@gmail.com", "0791006564",1,1);
+    require_once 'transformXmlToPdf.php';
+
+    addReservation($_POST["FirstName"], $_POST["LastName"], $_POST["Address"], $_POST["City"], $_POST["PLZ"], $_POST["Mail"], $_POST["PhoneNumber"], $_POST["offerId"], $_POST["offerId"]);
 
     /**
      * @param $FirstName
@@ -37,4 +39,7 @@
 
         // save changes to xml
         $reservationXml->saveXML($FilePath);
+
+        // transform reservation to pdf and show confirmation
+        // transformXmlToPdf($OfferId, $CourseId);
     }
