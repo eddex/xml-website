@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/lib/glyphicon.css" />
     <!-- ACCESSIBILITY STYLES -->
     <link id="style" rel="stylesheet" href="css/accessibility/none.css" />
+    <script type="text/javascript" src="js/lib/jquery.min.js"> </script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"> </script>
 </head>
 <body onload="restoreStyle('big.font.size')">
 
@@ -94,9 +96,82 @@
                     <h2>Jetzt registrieren!</h2>
                     <!-- TODO: show reservation form.  -->
 
+                    <?php
+                    $xml_ForReservation = new DOMDocument();
+                    $xml_ForReservation->load('../database/offer.xml');
+                    $xsl_ForReservation = new DOMDocument;
+                    $xsl_ForReservation->load('../xslt/offer_courses.xsl');
+
+                    $proc_ForReservation = new XSLTProcessor();
+                    $proc_ForReservation->setParameter(null, 'offerID', $_GET['id']);
+                    $proc_ForReservation->importStyleSheet($xsl_ForReservation);
+                    echo $proc_ForReservation->transformToXML($xml_ForReservation);
+                    ?>
                 </div>
             </div>
+
+            <div class="modal" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="padding:35px 50px;">
+                            <h4><span class="glyphicon glyphicon-lock"> </span> Reservation Erfassen</h4>
+                        </div>
+                        <form role="form" action="php/addreservation.php" method="post" target="_blank">
+                            <input type="hidden" id="courseId" name="courseId" value="" />
+                            <input type="hidden" id="offerId" name="offerId" value="" />
+                            <div class="modal-body" style="padding:40px 50px;">
+                                <div class="form-group">
+                                    <label for="FirstName"><span class="glyphicon glyphicon-user"> </span> FirstName</label>
+                                    <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="Vornamen eingeben" name="FirstName" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="LastName"><span class="glyphicon glyphicon-user"> </span> LastName</label>
+                                    <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Nachnamen eingeben" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Address"><span class="glyphicon glyphicon-road"> </span> Address</label>
+                                    <input type="text" class="form-control" id="Address" name="Address" placeholder="Addresse eingeben" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="City"><span class="glyphicon glyphicon-home"> </span> Stadt</label>
+                                    <input type="text" class="form-control" id="City" name="City" placeholder="Stadt eingeben" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="PLZ"><span class="glyphicon glyphicon-map-marker"> </span> PLZ</label>
+                                    <input type="number" class="form-control" id="PLZ" name="PLZ" placeholder="PLZ eingeben" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Mail"><span class="glyphicon glyphicon-envelope"> </span> EMail</label>
+                                    <input type="text" class="form-control" id="Mail" name="Mail" placeholder="EMail eingeben" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="PhoneNumber"><span class="glyphicon glyphicon-phone"> </span> Telefon Nr</label>
+                                    <input type="number" class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="Telefon Nr eingeben" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-danger .btn-lg" data-dismiss="modal"><span class="glyphicon glyphicon-remove"> </span> Abbrechen</button>
+                                <button type="submit" class="btn btn-success .btn-lg"><span class="glyphicon glyphicon-ok"> </span> Best&auml;tigen</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- adds an onclick function to buttons with class .addreservationbutton -->
+            <!-- buttons must have a data-offerid="[0-99]" and  data-courseid="[0-99]" to indicate the chosen course and offer -->
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $(".addreservationbutton").click(function(){ // Click to only happen on reservation buttons
+                        $("#courseId").val($(this).data('courseid'));
+                        $("#offerId").val($(this).data('offerid'));
+                        $('#myModal').modal('show');
+                    });
+                });
+            </script>
         </div>
+
 
         <!-- FOOTER -->
         <div class="bs-docs-section clearfix">
