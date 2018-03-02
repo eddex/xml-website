@@ -7,9 +7,6 @@
  */
 require_once 'FO/fop_service_client.php';
 
-
-transformXmlToPdf('1', '1');
-
 function transformXmlToPdf($offerId, $courseId) {
     // file path, hardcoded because we only have 1 reservation file and this should not change
     $reservationXmlPath = "../../database/reservation.xml\"";
