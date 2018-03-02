@@ -1,19 +1,7 @@
 <?php
     require_once 'transformXmlToPdf.php';
+    addReservation($_POST["FirstName"], $_POST["LastName"], $_POST["Address"], $_POST["City"], $_POST["PLZ"], $_POST["Mail"], $_POST["PhoneNumber"], $_POST["offerId"], $_POST["courseId"]);
 
-    addReservation($_POST["FirstName"], $_POST["LastName"], $_POST["Address"], $_POST["City"], $_POST["PLZ"], $_POST["Mail"], $_POST["PhoneNumber"], $_POST["offerId"], $_POST["offerId"]);
-
-    /**
-     * @param $FirstName
-     * @param $LastName
-     * @param $Address
-     * @param $City
-     * @param $PLZ
-     * @param $Mail
-     * @param $PhoneNumber
-     * @param $OfferId
-     * @param $CourseId
-     */
     function addReservation($FirstName, $LastName, $Address, $City, $PLZ, $Mail, $PhoneNumber, $OfferId, $CourseId) {
         // file path, hardcoded because we only have 1 reservation file and this should not change
         $FilePath = "../../database/reservation.xml";
@@ -41,5 +29,5 @@
         $reservationXml->saveXML($FilePath);
 
         // transform reservation to pdf and show confirmation
-        // transformXmlToPdf($OfferId, $CourseId);
+        transformXmlToPdf($OfferId, $CourseId);
     }
