@@ -22,6 +22,7 @@
                 <link id="style" rel="stylesheet" href="css/accessibility/none.css" />
             </head>
             <body>
+                <hr width="100%" />
                 <xsl:apply-templates select="$chosenCourses"/>
             </body>
         </html>
@@ -31,17 +32,17 @@
     <!-- display all offers  -->
     <xsl:template match="//course">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-3" align="left">
                 <xsl:value-of select="../title/text()" /> - <xsl:value-of select="@courseId" />
             </div>
-            <div class="col-sm-3">
-                Datum: <xsl:value-of select="@time" /><xsl:text>   </xsl:text>
-                <xsl:value-of select="@date" />
+            <div class="col-sm-3" align="center">
+                <xsl:value-of select="@date" /><xsl:text>,     </xsl:text>
+                <xsl:value-of select="@time" /> Uhr
             </div>
-            <div class="col-sm-3">
-                Preis: <xsl:value-of select="../price" /> CHF
+            <div class="col-sm-3" align="center">
+                <xsl:value-of select="../price" /> CHF
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3" align="right">
                 <button type="button" class="btn btn-default btn-sm addreservationbutton">
                     <xsl:attribute name="data-courseid">
                         <xsl:value-of select="@courseId" />
@@ -53,6 +54,7 @@
                 </button>
             </div>
         </div>
+        <hr width="100%" />
     </xsl:template>
 
 
