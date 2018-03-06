@@ -92,20 +92,9 @@
         <div class="bs-docs-section clearfix">
             <div class="row">
                 <div class="col-lg-12">
-
                     <h2>Jetzt registrieren!</h2>
-                    <!-- TODO: show reservation form.  -->
-
                     <?php
-                    $xml_ForReservation = new DOMDocument();
-                    $xml_ForReservation->load('../database/offer.xml');
-                    $xsl_ForReservation = new DOMDocument;
-                    $xsl_ForReservation->load('../xslt/offer_courses.xsl');
-
-                    $proc_ForReservation = new XSLTProcessor();
-                    $proc_ForReservation->setParameter(null, 'offerID', $_GET['id']);
-                    $proc_ForReservation->importStyleSheet($xsl_ForReservation);
-                    echo $proc_ForReservation->transformToXML($xml_ForReservation);
+                    printCourseDetailsWithReservation($_GET['id']);
                     ?>
                 </div>
             </div>
