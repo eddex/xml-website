@@ -26,7 +26,6 @@
 
                 <!-- NAVBAR -->
                 <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-
                     <div class="container">
                         <a href="." class="navbar-brand">Fiescher Sportzentrum</a>
                     </div>
@@ -111,7 +110,6 @@
         </html>
     </xsl:template>
 
-
     <!-- display all offers  -->
     <xsl:template match="offer">
         <div class="col-lg-6">
@@ -146,6 +144,5 @@
             </xsl:element>
         </div>
     </xsl:template>
-
-
+    
 </xsl:stylesheet>

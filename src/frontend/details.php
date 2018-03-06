@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/lib/glyphicon.css" />
     <!-- ACCESSIBILITY STYLES -->
     <link id="style" rel="stylesheet" href="css/accessibility/none.css" />
+    <!-- JS FRAMEWORKS -->
     <script type="text/javascript" src="js/lib/jquery.min.js"> </script>
     <script type="text/javascript" src="js/lib/bootstrap.min.js"> </script>
 </head>
@@ -15,12 +16,10 @@
 
     <!-- NAVBAR -->
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-
         <div class="container">
             <a href="./index.xhtml" class="navbar-brand">Fiescher Sportzentrum</a>
         </div>
     </div>
-
 
     <!-- Everything after this line is only displayed if an order id is present -->
 
@@ -82,7 +81,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- TODO: show feedback.  -->
+                    <!-- TODO: show feedback in modal when button is pressed (spider diagram).  -->
+                    <!-- TODO: feedback form.  -->
 
                 </div>
             </div>
@@ -149,7 +149,6 @@
                 </div>
             </div>
 
-
             <!-- adds an onclick function to buttons with class .addreservationbutton -->
             <!-- buttons must have a data-offerid="[0-99]" and  data-courseid="[0-99]" to indicate the chosen course and offer -->
             <script type="text/javascript">
@@ -163,7 +162,6 @@
                 });
             </script>
         </div>
-
 
         <!-- FOOTER -->
         <div class="bs-docs-section clearfix">
