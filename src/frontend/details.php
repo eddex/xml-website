@@ -114,12 +114,14 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header" style="padding:35px 50px;">
-                            <h4><span class="glyphicon glyphicon-lock"> </span> Reservation Erfassen</h4>
+                            <h3><span class="glyphicon glyphicon-lock"> </span> Reservation Erfassen</h3>
                         </div>
                         <form role="form" action="php/addreservation.php" method="post" target="_blank">
                             <input type="hidden" id="courseId" name="courseId" value="" />
                             <input type="hidden" id="offerId" name="offerId" value="" />
                             <div class="modal-body" style="padding:40px 50px;">
+                                <h6 id="title" name="title"></h6>
+                                <br/>
                                 <div class="form-group">
                                     <label for="FirstName"><span class="glyphicon glyphicon-user"> </span> FirstName</label>
                                     <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="Vornamen eingeben" name="FirstName" />
@@ -166,6 +168,7 @@
                     $(".addreservationbutton").click(function(){ // Click to only happen on reservation buttons
                         $("#courseId").val($(this).data('courseid'));
                         $("#offerId").val($(this).data('offerid'));
+                        $("#title").text($(this).data('title'));
                         $('#myModal').modal('show');
                     });
                 });

@@ -50,6 +50,11 @@
                     <xsl:attribute name="data-offerid">
                         <xsl:value-of select="../@id" />
                     </xsl:attribute>
+                    <xsl:attribute name="data-title">
+                        <xsl:value-of select="../title/text()" /><xsl:text>   </xsl:text>
+                        <xsl:value-of select="@date" /><xsl:text>,  </xsl:text>
+                        <xsl:value-of select="@time" /> Uhr
+                    </xsl:attribute>
                     Reservieren
                 </button>
             </div>
