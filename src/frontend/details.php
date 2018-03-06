@@ -17,7 +17,7 @@
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
 
         <div class="container">
-            <a href="./index.xhtml" class="navbar-brand">Unsere Tolle Sportanlage</a>
+            <a href="./index.xhtml" class="navbar-brand">Fiescher Sportzentrum</a>
         </div>
     </div>
 

@@ -28,7 +28,7 @@
                 <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
 
                     <div class="container">
-                        <a href="." class="navbar-brand">Unsere Tolle Sportanlage</a>
+                        <a href="." class="navbar-brand">Fiescher Sportzentrum</a>
                     </div>
                 </div>
 
@@ -125,9 +125,14 @@
                 </xsl:attribute>
                 <div class="bs-component">
                     <div class="card mb-3">
-                        <img style="min-height: 200px; width: 100%; display: block;"
-                             src="https://image.shutterstock.com/z/stock-photo-businessman-ready-to-commit-suicide-93915967.jpg"
-                             alt="Card image" />
+                        <xsl:element name="img">
+                            <xsl:attribute name="style">
+                                min-height: 200px; width: 100%; display: block;
+                            </xsl:attribute>
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="image"/>
+                            </xsl:attribute>
+                        </xsl:element>
                         <h3 class="card-header"><xsl:value-of select="title/text()" /></h3>
                         <div class="card-body">
                             <h5 class="card-title"><xsl:value-of select="description/text()" /></h5>
