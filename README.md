@@ -24,6 +24,16 @@ and you will be reconsidering all the choices you have taken in your life ¯\\_(
 ### how to use glyphicons
 * [referencce on w3schools](https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp)
 
+### git pull with merge conflicts :scream:
+* `git pull` results in `error: Failed to merge in the changes.`
+* run `git mergetool` (if you have configured a merge tool, it will open with the next merge conflict. Otherwise it wil open the merge tool in your console.)
+* resolve the merge conflict.
+* save the file and close the merge tool
+* run `git rebase --continue`
+* if another conflict occurrs, open the merge tool again
+* if you don't have any other errors, your're ready to push your changes.
+
 ## open source software
 * [Glyphicons from Twitter Bootstrap](https://github.com/twbs/bootstrap/)
+* [JS from Twitter Bootstrap](https://github.com/twbs/bootstrap/)
 * [Bootstrap "Flatly" theme](https://bootswatch.com/flatly/)
