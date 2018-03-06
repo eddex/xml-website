@@ -9,6 +9,7 @@
         <course courseId="4" date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="14" />
         <course courseId="5" date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="14" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-friends-playing-basketball-afro-american-players-having-a-friendly-match-outdoors-595070921.jpg</image>
     </offer>
     <offer id="2">
         <title>Handball</title>
@@ -19,6 +20,7 @@
         <course courseId="4" date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
         <course courseId="5" date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
         <description>Handball ist eine Sportart, bei der zwei Mannschaften mit je sieben Spielern (sechs Feldspieler und ein Torwart) gegeneinander spielen. Das Ziel des Spiels besteht darin, den Handball in das gegnerische Tor zu werfen und damit ein Tor zu erzielen.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-sportsman-holding-a-ball-against-digital-image-of-handball-goal-437141215.jpg</image>
     </offer>
     <offer id="3">
         <title>Wandern</title>
@@ -26,47 +28,55 @@
         <course courseId="1" date="10.02.2018" time="08:00" duration="4" trainer="Ruth Reichmuth" maxParticipants="25" />
         <course courseId="2" date="12.02.2018" time="14:00" duration="4" trainer="Florian Hardegger" maxParticipants="25" />
         <description>Wandern ist Gehen in der Landschaft. Dabei handelt es sich um eine Freizeitaktivität mit unterschiedlich starker k?rperlicher Anforderung.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-group-of-hikers-walking-in-mountains-edges-of-the-image-are-blurred-208356901.jpg</image>
     </offer>
     <offer id="4">
         <title>Joggen</title>
         <price>10.00</price>
         <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-young-woman-runner-running-on-city-bridge-road-359568020.jpg</image>
     </offer>
     <offer id="5">
         <title>Sauna</title>
         <price>10.00</price>
         <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-sauna-662790739.jpg</image>
     </offer>
     <offer id="6">
         <title>Wellness</title>
         <price>10.00</price>
         <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
         <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-young-woman-enjoying-the-therapeutic-effects-of-a-traditional-hot-stone-massage-at-luxury-spa-and-763094389.jpg</image>
     </offer>
     <offer id="7">
-        <title>Basketball</title>
+        <title>Vita-Parcours</title>
         <price>10.00</price>
         <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <description>Ein Trimm-dich-Pfad ist ein Rundkurs, bei dem sich etwa alle 200 Meter ein einfaches und robustes Turngerät befindet. Die Idee kommt aus der Schweiz. Dort sind ähnliche Strecken unter dem Namen Vitaparcours bekannt. In Österreich ist der Begriff Forstmeile verbreitet.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-fit-man-and-woman-performing-pull-ups-on-bar-during-obstacle-course-in-boot-camp-655268557.jpg</image>
     </offer>
     <offer id="8">
-        <title>Basketball</title>
+        <title>Schwimmen</title>
         <price>10.00</price>
         <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <description>Der Schwimmkurs ist für Beginner sowie für Fortgeschrittene geeignet. Im Fokus stehen Wasserspiele und das Lernen verschiedener Schwimmtechniken.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-enjoying-pool-party-with-friends-group-of-beautiful-young-people-looking-happy-while-jumping-into-481528804.jpg</image>
     </offer>
     <offer id="9">
-        <title>Basketball</title>
+        <title>Spinning</title>
         <price>10.00</price>
         <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <description>Spinning oder Indoorcycling ist ein Ausdauersport auf stationären Fahrrädern, den sogenannten Indoorbikes oder Spinbikes. Unterstützt werden sie in diesem Angebot von unserem Spinning-Coach und passender Musik.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-fit-people-working-out-at-spinning-class-in-the-gym-565481770.jpg</image>
     </offer>
     <offer id="10">
-        <title>Basketball</title>
+        <title>Inline-Skating</title>
         <price>10.00</price>
         <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <description>In diesem Angebot lernen Sie die Grundlagen des Inline Skating. Dazu gehören beschleunigen, bremsen, Kurven fahren und je nach individuellem Fortschritt noch weitere, schwierigere Techniken.</description>
+        <image>https://image.shutterstock.com/z/stock-photo-little-boy-in-protective-equipment-and-rollers-stands-on-walkway-in-park-low-angle-view-156263201.jpg</image>
     </offer>
 </offers>
