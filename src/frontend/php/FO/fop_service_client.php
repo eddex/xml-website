@@ -15,7 +15,7 @@ class FOPServiceClient {
     /**
      * @param string $foFilePath The filepath to the FO file to be rendered.
      * @param string $pdfFilePath Optional. The filepath were to save the generated PDF file.
-     * @return string The filepath to the generated PDF file.
+     * @return string $pdfData The file content of the generated PDF file
      */
     public function processFile($foFilePath, $pdfFilePath = null) {
 
@@ -28,18 +28,9 @@ class FOPServiceClient {
         $foData = $this->readFile($foFilePath);
         $pdfData = $this->renderFile($foData);
         $this->writeFile($pdfData, $pdfFilePath);
-
-        $link = $this->createDownloadLink($pdfFilePath);
-        return $link;
+        return $pdfData;
     }
 
-    private function createDownloadLink($filePath) {
-        $ret = pathinfo($filePath, PATHINFO_FILENAME);
-        $ext = pathinfo($filePath, PATHINFO_EXTENSION);
-        $ret .= (strlen($ext) == 0) ? '' : '.';
-        $fileName = $ret . $ext;
-        return sprintf ("download.php?file=%s", urlencode($fileName));
-    }
 
     /**
      * Replaces the file extension of a given filepath.
