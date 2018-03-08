@@ -27,7 +27,7 @@
     </xsl:template>
 
 
-    <xsl:template match="Reservation">
+    <xsl:template match="Reservation[last()]">
         <fo:table space-after.optimum="20pt" font-size="11pt" margin="10">
             <fo:table-column column-number="1" />
             <fo:table-column column-number="2"/>
