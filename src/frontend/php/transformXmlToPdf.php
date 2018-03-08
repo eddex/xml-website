@@ -1,5 +1,4 @@
 <?php
-
 require_once 'FO/fop_service_client.php';
 
 function transformXmlToPdf($offerId, $courseId) {
@@ -22,12 +21,15 @@ function transformXmlToPdf($offerId, $courseId) {
 
     // create an instance of the FOP client and perform service request.
     $serviceClient = new FOPServiceClient();
-    $pdfFile = $serviceClient->processFile($reservationFoPath);
+    $generatedPdfData = $serviceClient->processFile($reservationFoPath);
 
-    // generate HTML output and show results of service request
-    echo '<h1>FOP Service Client</h1>';
-    echo sprintf('<p>Successfully rendered FO File<br><strong><a href="%s">%s</a></strong></p>', $foFile, $foFile);
-    echo sprintf('<p>Generated PDF:<br><strong><a href="%s">%s</a></strong></p>', $pdfFile, $pdfFile);
-
+    // show generated pdf in browser
+    header('Content-Type: application/pdf');
+    header('Content-Length: ' . strlen($generatedPdfData));
+    header('Content-Disposition: inline; filename="reservation.pdf"');
+    header('Cache-Control: private, max-age=0, must-revalidate');
+    header('Pragma: public');
+    ini_set('zlib.output_compression','0');
+    die($generatedPdfData);
 }
 ?>
