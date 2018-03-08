@@ -1,16 +1,38 @@
 <?xml version="1.0" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:param name="offerID"  />
-	<xsl:variable name="selectedFeedback" select="document('../database/feedback.xml')//feedback[@offerID = $offerID]" />
-	<xsl:variable name="selectedFunSum" select="$selectedFeedback/rating/@fun" />
 
-	<!-- <xsl:variable name="fun" select="$selectedFeedback/rating[@fun]"/> -->
+	<xsl:variable name="feedback" select="document('../database/feedback.xml')//feedback[@offerID = $offerID]" />
+	<!-- feedback sum and count -->
+	<xsl:variable name="funSum" select="sum($feedback/rating/@fun)" />
+	<xsl:variable name="funCount" select="count($feedback/rating/@fun)" />
+	<xsl:variable name="difficultySum" select="sum($feedback/rating/@difficulty)" />
+	<xsl:variable name="difficultyCount" select="count($feedback/rating/@difficulty)" />
+	<xsl:variable name="effortSum" select="sum($feedback/rating/@effort)" />
+	<xsl:variable name="effortCount" select="count($feedback/rating/@effort)" />
+	<xsl:variable name="staffSum" select="sum($feedback/rating/@staff)" />
+	<xsl:variable name="staffCount" select="count($feedback/rating/@staff)" />
+	<xsl:variable name="cost-effectivenessSum" select="sum($feedback/rating/@cost-effectiveness)" />
+	<xsl:variable name="cost-effectivenessCount" select="count($feedback/rating/@cost-effectiveness)" />
+	<xsl:variable name="overall-ratingSum" select="sum($feedback/rating/@overall-rating)" />
+	<xsl:variable name="overall-ratingCount" select="count($feedback/rating/@overall-rating)" />
+
+	<!-- average feedback -->
+	<xsl:variable name="fun" select="ceiling($funSum div $funCount)" />
+	<xsl:variable name="difficult" select="ceiling($difficultySum div $difficultyCount)" />
+	<xsl:variable name="effort" select="ceiling($effortSum div $effortCount)" />
+	<xsl:variable name="staff" select="ceiling($staffSum div $staffCount)" />
+	<xsl:variable name="cost-effectiveness" select="ceiling($cost-effectivenessSum div $cost-effectivenessCount)" />
+	<xsl:variable name="overall-rating" select="ceiling($overall-ratingSum div $overall-ratingCount)" />
+
+<!-- <xsl:variable name="Fun" select="FunSum/FunCount" /> -->
+
+
+	<!-- <xsl:variable name="fun" select="$Feedback/rating[@fun]"/> -->
 
 
 
 	<xsl:template match="/">
-		<!--svg template - finde variables to change -->
-			<!-- <fo:block><xsl:value-of select="$selectedFeedback/rating/@fun" /></fo:block> -->
 
 			<svg width="15cm" height="10cm"
 			 viewBox="0 0 1000 800" preserveAspectRatio="none"
@@ -35,7 +57,7 @@
 					fill: #000;
 					font-family: times, serif;
 					font-size: 14pt;
-					font-weight: normal;
+					font-weight: bold;
 					stroke: none;
 					text-anchor: middle;
 				}
@@ -73,10 +95,9 @@
 				<use xlink:href="#wedge" transform="rotate(240)" />
 				<use xlink:href="#wedge" transform="rotate(300)" />
 
+				<!-- Create polygon with xml variables -->
+				<polygon class="feedback" points="{$overall-rating*(0)},{$overall-rating*(-60)} {$staff*(-52)},{$staff*(-30)} {$effort*(-52)},{$effort*(30)} {$cost-effectiveness*(0)},{$cost-effectiveness*(60)} {$difficult*(52)},{$difficult*(30)} {$fun*(52)},{$fun*(-30)}" />
 
-
-				<polygon class="feedback" points="0,-60 -50,-30.0 -50,30
-					0,60 50,30 50,-30" />
 
 				<!-- <polygon class="expenditure" points="0,-267 -150.69,-87 -85.74,49.5 -->
 					<!-- 0,90 77.94,45 155.88,-90" /> -->
