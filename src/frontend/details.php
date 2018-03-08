@@ -69,57 +69,63 @@
                     <div class="bs-component">
                         <div class="card mb-3">
                             <div class="card-body" style="position:relative;">
-                                <h5 class="card-title" style="min-height:250px; margin-top:50px;">
-                                  <p>
-                                    Allgemein:
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                  </p>
-                                  <p>
-                                    Spass:
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                  </p>
-                                  <p>
-                                    Schwierigkeit:
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                  </p>
-                                  <p>
-                                    Preis-Leistung:
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                  </p>
-                                  <p>
-                                    Anstrenung:
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                  </p>
-                                  <p>
-                                    Kursleitung:
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                  </p>
+                                <h5 class="card-title" style="min-height:300px; margin-top:50px;">
+                                  <form role="form" action="php/bewertung.php" method="post" target="_blank">
+                                    <input type="hidden" id="offerId" name="offerId" value="<?php echo htmlspecialchars($_GET['id']) ?>" />
+                                    <div id="overall" class="form-check" >
+                                        <label for="FirstName" style="width:150px;">Allgemein:</label>
+                                        <label class="radio-inline"><input type="radio" name="radio1" value="1">1</label>
+                                        <label class="radio-inline"><input type="radio" name="radio1" value="2">2</label>
+                                        <label class="radio-inline"><input type="radio" name="radio1" value="3">3</label>
+                                        <label class="radio-inline"><input type="radio" name="radio1" value="4">4</label>
+                                        <label class="radio-inline"><input type="radio" name="radio1" value="5">5</label>
+                                    </div>
+                                    <div id="fun" class="form-check">
+                                        <label for="FirstName" style="width:150px;">Spass:</label>
+                                        <label class="radio-inline"><input type="radio" name="radio2" value="1">1</label>
+                                        <label class="radio-inline"><input type="radio" name="radio2" value="2">2</label>
+                                        <label class="radio-inline"><input type="radio" name="radio2" value="3">3</label>
+                                        <label class="radio-inline"><input type="radio" name="radio2" value="4">4</label>
+                                        <label class="radio-inline"><input type="radio" name="radio2" value="5">5</label>
+                                    </div>
+                                    <div id="fun" class="form-check">
+                                        <label for="FirstName" style="width:150px;">Schwierigkeit:</label>
+                                        <label class="radio-inline"><input type="radio" name="radio3" value="1">1</label>
+                                        <label class="radio-inline"><input type="radio" name="radio3" value="2">2</label>
+                                        <label class="radio-inline"><input type="radio" name="radio3" value="3">3</label>
+                                        <label class="radio-inline"><input type="radio" name="radio3" value="4">4</label>
+                                        <label class="radio-inline"><input type="radio" name="radio3" value="5">5</label>
+                                    </div>
+                                    <div id="fun" class="form-check">
+                                        <label for="FirstName" style="width:150px;">Preis-Leistung:</label>
+                                        <label class="radio-inline"><input type="radio" name="radio4" value="1">1</label>
+                                        <label class="radio-inline"><input type="radio" name="radio4" value="2">2</label>
+                                        <label class="radio-inline"><input type="radio" name="radio4" value="3">3</label>
+                                        <label class="radio-inline"><input type="radio" name="radio4" value="4">4</label>
+                                        <label class="radio-inline"><input type="radio" name="radio4" value="5">5</label>
+                                    </div>
+
+                                    <div id="fun" class="form-check">
+                                        <label for="FirstName" style="width:150px;">Anstrenung:</label>
+                                        <label class="radio-inline"><input type="radio" name="radio5" value="1">1</label>
+                                        <label class="radio-inline"><input type="radio" name="radio5" value="2">2</label>
+                                        <label class="radio-inline"><input type="radio" name="radio5" value="3">3</label>
+                                        <label class="radio-inline"><input type="radio" name="radio5" value="4">4</label>
+                                        <label class="radio-inline"><input type="radio" name="radio5" value="5">5</label>
+                                    </div>
+
+                                    <div id="fun" class="form-check">
+                                        <label for="FirstName" style="width:150px;">Kursleitung:</label>
+                                        <label class="radio-inline"><input type="radio" name="radio6" value="1">1</label>
+                                        <label class="radio-inline"><input type="radio" name="radio6" value="2">2</label>
+                                        <label class="radio-inline"><input type="radio" name="radio6" value="3">3</label>
+                                        <label class="radio-inline"><input type="radio" name="radio6" value="4">4</label>
+                                        <label class="radio-inline"><input type="radio" name="radio6" value="5">5</label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary"  style="margin:20px 0 0 20px;">Bewerten</button>
+                                  </form>
                                 </h5>
-                                <button type="button" class="btn btn-info text-right">Details öffnen</button>
                                 <div style="position:absolute; top:0; right:0;">
                                   <h5 class="card-title">
                                   </h5>
