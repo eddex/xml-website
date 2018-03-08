@@ -35,5 +35,15 @@ function printCourseDetailsWithReservation($offerID)
     echo $proc_ForReservation->transformToXML($xml_ForReservation);
 }
 
+//feedbackfunction
+function printFeedback($offerID){
+	  $xml_ForFeedback = new DOMDocument();
+    $xml_ForFeedback->load('../database/feedback.xml');
+    $xsl_ForFeedback = new DOMDocument;
+    $xsl_ForFeedback->load('../xslt/feedback.xsl');
 
-
+    $proc_ForFeedback = new XSLTProcessor();
+    $proc_ForFeedback->setParameter(null, 'offerID', $offerID);
+    $proc_ForFeedback->importStyleSheet($xsl_ForFeedback);
+    echo $proc_ForFeedback->transformToXML($xml_ForFeedback);
+}

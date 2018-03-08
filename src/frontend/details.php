@@ -68,17 +68,68 @@
                     <h2>Bewertungen unserer Kunden</h2>
                     <div class="bs-component">
                         <div class="card mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Bewertung:
+                            <div class="card-body" style="position:relative;">
+                                <h5 class="card-title" style="min-height:250px; margin-top:50px;">
+                                  <p>
+                                    Allgemein:
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star-empty"></span>
                                     <span class="glyphicon glyphicon-star-empty"></span>
+                                  </p>
+                                  <p>
+                                    Spass:
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                  </p>
+                                  <p>
+                                    Schwierigkeit:
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                  </p>
+                                  <p>
+                                    Preis-Leistung:
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                  </p>
+                                  <p>
+                                    Anstrenung:
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                  </p>
+                                  <p>
+                                    Kursleitung:
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                  </p>
                                 </h5>
                                 <button type="button" class="btn btn-info text-right">Details öffnen</button>
+                                <div style="position:absolute; top:0; right:0;">
+                                  <h5 class="card-title">
+                                  </h5>
+                                   <?php printFeedback($id); ?>
+                                </div>
+
                             </div>
+                        </div>
+                        <div class="card-body">
+
                         </div>
                     </div>
                     <!-- TODO: show feedback in modal when button is pressed (spider diagram).  -->
