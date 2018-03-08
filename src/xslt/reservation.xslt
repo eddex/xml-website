@@ -10,16 +10,16 @@
             <fo:layout-master-set>
                 <fo:simple-page-master master-name="masterpage" page-height="29.7cm" page-width="21cm" margin="2" >
                     <fo:region-body margin="20" background-color="#343434"/>
-                    <fo:region-before extent="2cm" background-color="#353839" />
-                    <fo:region-after extent="2cm" background-color="#353839" />
-                    <fo:region-start extent="2cm" background-color="#353839" />
-                    <fo:region-end  extent="2cm" background-color="#353839" />
+                    <fo:region-before extent="0.73cm" background-color="#353839" />
+                    <fo:region-after extent="0.73cm" background-color="#353839" />
+                    <fo:region-start extent="0.73cm" background-color="#353839" />
+                    <fo:region-end  extent="0.73cm" background-color="#353839" />
                 </fo:simple-page-master>
             </fo:layout-master-set>
 
             <fo:page-sequence master-reference="masterpage">
                 <!-- static content, such as footer(region-before) and header(region-after) -->
-                <fo:flow flow-name="xsl-region-body" display-align="center">
+                <fo:flow flow-name="xsl-region-body" display-align="center" width="21cm">
                     <xsl:apply-templates select="//Reservation[@offerId = $offerID and @courseId = $courseID]" />
                 </fo:flow>
             </fo:page-sequence>
@@ -27,7 +27,7 @@
     </xsl:template>
 
 
-    <xsl:template match="//Reservation">
+    <xsl:template match="Reservation">
         <fo:table space-after.optimum="20pt" font-size="11pt" margin="10">
             <fo:table-column column-number="1" />
             <fo:table-column column-number="2"/>
@@ -36,7 +36,7 @@
                 <fo:table-row>
                     <fo:table-cell number-columns-spanned="3" height="100" display-align="after" text-align="center">
                         <fo:block font-size="24pt" font-family="Georgia" color="white" text-align="center">
-                            Vielen Dank <xsl:value-of select="//Reservation/FirstName" />
+                            Vielen Dank <xsl:value-of select="FirstName" />
                         </fo:block>
                     </fo:table-cell>
                 </fo:table-row>
@@ -86,8 +86,6 @@
                         </fo:block>
                     </fo:table-cell>
                 </fo:table-row>
-
-
             </fo:table-body>
         </fo:table>
     </xsl:template>
