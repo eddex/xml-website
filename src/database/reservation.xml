@@ -1,5 +1,5 @@
-<?xml version="1.0" ?>
-<Reservations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="reservation.xsd" >
+<?xml version="1.0"?>
+<Reservations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="reservation.xsd">
     <Reservation offerId="1" courseId="1">
         <FirstName>Trevor</FirstName>
         <LastName>Smith</LastName>
@@ -27,4 +27,4 @@
         <Mail>bborton@gmail.com</Mail>
         <PhoneNumber>1230004444</PhoneNumber>
     </Reservation>
-</Reservations>
+<Reservation offerId="" courseId="5"><FirstName/><LastName/><Address/><City/><PLZ/><Mail/><PhoneNumber/></Reservation></Reservations>

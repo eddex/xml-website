@@ -13,6 +13,11 @@
     border-color: #2A9FD6;
 }
 
-.lead, .btn, h5, .navbar-brand {
+.lead, .btn, h5, .navbar-brand, label {
     font-size: 1.7rem !important;
+}
+
+svg {
+  color:white !important;
+  background: white !important;
 }

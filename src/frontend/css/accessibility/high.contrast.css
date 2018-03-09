@@ -12,3 +12,8 @@
 .btn-primary {
     border-color: #2A9FD6;
 }
+
+svg {
+  color:white !important;
+  background: white !important;
+}

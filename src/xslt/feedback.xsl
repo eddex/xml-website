@@ -123,12 +123,10 @@
 				</g>
 			</g>
 
-			<!-- <g transform="translate(750 380)">
+			  <g transform="translate(750 380)">
 				<line class="feedback" x2="40"/>
-				<text x="120" y="5">Allocated Budget</text>
-				<line class="expenditure" x2="40" y1="50" y2="50"/>
-				<text x="120" y="55">Actual Spending</text>
-			</g> -->
+				<text x="120" y="5">Bewertung</text>
+			</g>
 
 		</svg>
 
