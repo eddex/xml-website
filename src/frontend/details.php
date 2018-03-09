@@ -108,7 +108,7 @@
                                         </div>
 
                                         <div id="fun" class="form-check">
-                                            <label for="FirstName" style="width:200px;">Anstrenung:</label>
+                                            <label for="FirstName" style="width:200px;">Anstrengung:</label>
                                             <label class="radio-inline"><input type="radio" name="radio5" value="1">1</label>
                                             <label class="radio-inline"><input type="radio" name="radio5" value="2">2</label>
                                             <label class="radio-inline"><input type="radio" name="radio5" value="3">3</label>

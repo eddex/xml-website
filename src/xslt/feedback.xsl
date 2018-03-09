@@ -105,7 +105,7 @@
 				<g id="labels">
 					<text x="0" y="-320">Allgemein</text>
 					<text x="-320" y="-170">Kursleitung</text>
-					<text x="-320" y="155">Anstrenung</text>
+					<text x="-320" y="155">Anstrengung</text>
 					<!-- <text x="-320" y="170">Technology</text>-->
 					<text x="0" y="340">Preis-Leistung</text>
 					<!--<text x="0" y="355">Support</text>-->
