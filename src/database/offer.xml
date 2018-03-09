@@ -14,11 +14,11 @@
     <offer id="2">
         <title>Handball</title>
         <price>10.00</price>
-        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="18" />
-        <course courseId="2" date="10.02.2018" time="10:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
-        <course courseId="3" date="10.02.2018" time="12:00" duration="1" trainer="Hans Alois" maxParticipants="18" />
-        <course courseId="4" date="12.02.2018" time="14:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
-        <course courseId="5" date="12.02.2018" time="16:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Peter Meier" maxParticipants="18" />
+        <course courseId="2" date="10.02.2018" time="10:00" duration="2" trainer="Hans Alois" maxParticipants="18" />
+        <course courseId="3" date="10.02.2018" time="12:00" duration="1" trainer="Peter Meier" maxParticipants="18" />
+        <course courseId="4" date="12.02.2018" time="14:00" duration="2" trainer="Hans Alois" maxParticipants="18" />
+        <course courseId="5" date="12.02.2018" time="16:00" duration="2" trainer="Hans Alois" maxParticipants="18" />
         <description>Handball ist eine Sportart, bei der zwei Mannschaften mit je sieben Spielern (sechs Feldspieler und ein Torwart) gegeneinander spielen. Das Ziel des Spiels besteht darin, den Handball in das gegnerische Tor zu werfen und damit ein Tor zu erzielen.</description>
         <image>https://image.shutterstock.com/z/stock-photo-sportsman-holding-a-ball-against-digital-image-of-handball-goal-437141215.jpg</image>
     </offer>
@@ -33,49 +33,49 @@
     <offer id="4">
         <title>Joggen</title>
         <price>10.00</price>
-        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Walter Petri" maxParticipants="20" />
+        <description>Jogging, auch als Dauerlauf bezeichnet, ist eine Form des Freizeit- beziehungsweise Laufsports, bei der durch gemächliche Dauerläufe die Kondition gesteigert wird.</description>
         <image>https://image.shutterstock.com/z/stock-photo-young-woman-runner-running-on-city-bridge-road-359568020.jpg</image>
     </offer>
     <offer id="5">
         <title>Sauna</title>
         <price>10.00</price>
-        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Simone Näpfli" maxParticipants="20" />
+        <description>Eine Sauna (auch Schwitzstube oder finnische Sauna genannt) ist ein Raum, der mithilfe eines Saunaofens auf 80 bis 105 Grad Celsius erhitzt wird. Das Schwitzbad in der Sauna fördert die Gesundheit und dient der Entspannung.</description>
         <image>https://image.shutterstock.com/z/stock-photo-sauna-662790739.jpg</image>
     </offer>
     <offer id="6">
         <title>Wellness</title>
         <price>10.00</price>
-        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
-        <description>Basketball ist eine meist in der Halle betriebene Ballsportart, bei der zwei Mannschaften versuchen, den Ball in den jeweils gegnerischen Korb zu werfen.</description>
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Gerhard Strebel" maxParticipants="20" />
+        <description>Unser abwechslungsreiche Wellnessangebot bietet ihnen die Möglichkeit, ihr psychisches und physisches Wohlbefinden zu steigern.</description>
         <image>https://image.shutterstock.com/z/stock-photo-young-woman-enjoying-the-therapeutic-effects-of-a-traditional-hot-stone-massage-at-luxury-spa-and-763094389.jpg</image>
     </offer>
     <offer id="7">
         <title>Vita-Parcours</title>
         <price>10.00</price>
-        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Andreas Spitzig" maxParticipants="20" />
         <description>Ein Trimm-dich-Pfad ist ein Rundkurs, bei dem sich etwa alle 200 Meter ein einfaches und robustes Turngerät befindet. Die Idee kommt aus der Schweiz. Dort sind ähnliche Strecken unter dem Namen Vitaparcours bekannt. In Österreich ist der Begriff Forstmeile verbreitet.</description>
         <image>https://image.shutterstock.com/z/stock-photo-fit-man-and-woman-performing-pull-ups-on-bar-during-obstacle-course-in-boot-camp-655268557.jpg</image>
     </offer>
     <offer id="8">
         <title>Schwimmen</title>
         <price>10.00</price>
-        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Lavender Schlak" maxParticipants="20" />
         <description>Der Schwimmkurs ist für Beginner sowie für Fortgeschrittene geeignet. Im Fokus stehen Wasserspiele und das Lernen verschiedener Schwimmtechniken.</description>
         <image>https://image.shutterstock.com/z/stock-photo-enjoying-pool-party-with-friends-group-of-beautiful-young-people-looking-happy-while-jumping-into-481528804.jpg</image>
     </offer>
     <offer id="9">
         <title>Spinning</title>
         <price>10.00</price>
-        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Uli Reichmuth" maxParticipants="20" />
         <description>Spinning oder Indoorcycling ist ein Ausdauersport auf stationären Fahrrädern, den sogenannten Indoorbikes oder Spinbikes. Unterstützt werden sie in diesem Angebot von unserem Spinning-Coach und passender Musik.</description>
         <image>https://image.shutterstock.com/z/stock-photo-fit-people-working-out-at-spinning-class-in-the-gym-565481770.jpg</image>
     </offer>
     <offer id="10">
         <title>Inline-Skating</title>
         <price>10.00</price>
-        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Hans Alois" maxParticipants="20" />
+        <course courseId="1" date="10.02.2018" time="08:00" duration="2" trainer="Foger Rederer" maxParticipants="20" />
         <description>In diesem Angebot lernen Sie die Grundlagen des Inline Skating. Dazu gehören beschleunigen, bremsen, Kurven fahren und je nach individuellem Fortschritt noch weitere, schwierigere Techniken.</description>
         <image>https://image.shutterstock.com/z/stock-photo-little-boy-in-protective-equipment-and-rollers-stands-on-walkway-in-park-low-angle-view-156263201.jpg</image>
     </offer>
