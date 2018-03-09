@@ -36,6 +36,24 @@
                 <div class="container">
                     <!-- HEAD -->
                     <div class="page-header" id="banner">
+						<div class="row" >
+							<div class="col-lg-3">
+								<p class="bs-component">
+									<button type="button" class="btn btn-primary btn-lg btn-block" onclick="playAudio()">
+										Audio on
+										<span class="glyphicon glyphicon-sunglasses"> </span>
+									</button>
+								</p>
+							</div>
+							<div class="col-lg-3">
+								<p class="bs-component">
+									<button type="button" class="btn btn-primary btn-lg btn-block" onclick="muteAudio()">
+										Audio off
+										<span class="glyphicon glyphicon-sunglasses"> </span>
+									</button>
+								</p>
+							</div>
+						</div>
                         <div class="row">
                             <div class="col-lg-8" onmouseover="playWelcome();">
                                 <h1>Willkommen</h1>
@@ -91,6 +109,7 @@
                                         </button>
                                     </p>
                                 </div>
+								
                             </div>
                         </div>
                         <!-- OFFERS -->
