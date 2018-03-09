@@ -30,7 +30,7 @@
   }
   else{
 ?>
-    <p>Da ging etwas schief... bitte versuchen sie es nochmals.</p>
+    <p>Da ging etwas schief... Überprüfe ob alle Punkte bewertet wurden.</p>
 <?php
 
   }
