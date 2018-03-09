@@ -59,11 +59,6 @@
                                 <h1>Willkommen</h1>
                                 <p class="lead">
                                     In unserem Sportzentrum können sie tolle sachen machen.
-                                    Soluta quas sit sint voluptatem ratione qui et dolore.
-                                    Eligendi quidem aspernatur et et consectetur.
-                                    Sunt eos necessitatibus mollitia culpa aut distinctio.
-                                    Hic quasi rerum eos repellat quia aliquam et.
-                                    Eius sit necessitatibus est. Praesentium qui rem deserunt delectus rem et.
                                 </p>
                             </div>
                         </div>
