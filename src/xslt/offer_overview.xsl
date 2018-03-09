@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
 
     <!-- set output to XHTML -->
@@ -21,6 +21,7 @@
                 <link rel="stylesheet" href="css/lib/glyphicon.css" />
                 <!-- ACCESSIBILITY STYLES -->
                 <link id="style" rel="stylesheet" href="css/accessibility/none.css" />
+				<script type="text/javascript" src="js/audio.js"> </script>
             </head>
             <body onload="restoreStyle('big.font.size')">
 
@@ -36,7 +37,7 @@
                     <!-- HEAD -->
                     <div class="page-header" id="banner">
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-8" onmouseover="playWelcome();">
                                 <h1>Willkommen</h1>
                                 <p class="lead">
                                     In unserem Sportzentrum können sie tolle sachen machen.
@@ -49,15 +50,15 @@
                             </div>
                         </div>
                         <!-- PAGE DESIGN CHOICE -->
-                        <div class="bs-docs-section clearfix">
+                        <div class="bs-docs-section clearfix" >
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12" onmouseover="playDesign();">
                                     <h3>Design</h3>
                                     <p class="lead">
                                         Wählen sie ein Design für die Webseite, welches ihren Ansprüchen entspricht.
                                     </p>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3" onmouseover="playGroText();">
                                     <p class="bs-component">
                                         <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('big.font.size')">
                                             Grosser Text
@@ -65,7 +66,7 @@
                                         </button>
                                     </p>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3" onmouseover="playHohKontrast();">
                                     <p class="bs-component">
                                         <button type="button" class="btn btn-primary btn-lg btn-block"  onclick="changeToStyle('high.contrast')">
                                             Hoher Kontrast
@@ -73,7 +74,7 @@
                                         </button>
                                     </p>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3" onmouseover="playHohKonGroText();">
                                     <p class="bs-component">
                                         <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('both')">
                                             Beides
@@ -82,7 +83,7 @@
                                         </button>
                                     </p>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3" onmouseover="playStandard();">
                                     <p class="bs-component">
                                         <button type="button" class="btn btn-primary btn-lg btn-block" onclick="changeToStyle('none')">
                                             Nichts
@@ -106,6 +107,55 @@
 
                 </div>
                 <script type="text/javascript" src="js/style.js"> </script>
+				
+				<audio id="welcomeClip">
+					<source src="audio/Willkommen.mp3" />
+				</audio>
+				<audio id="designClip">
+					<source src="audio/Design.mp3" />
+				</audio>
+				<audio id="groTextClip">
+					<source src="audio/GroText.mp3" />
+				</audio>
+				<audio id="hohKontrastClip">
+					<source src="audio/HohKontrast.mp3" />
+				</audio>
+				<audio id="hohKonGroTextClip">
+					<source src="audio/HohKonGroText.mp3" />
+				</audio>
+				<audio id="standardClip">
+					<source src="audio/Standard.mp3" />
+				</audio>
+				<audio id="basketballClip">
+					<source src="audio/Basketball.mp3" />
+				</audio>
+				<audio id="handballClip">
+					<source src="audio/Handball.mp3" />
+				</audio>
+				<audio id="treckingClip">
+					<source src="audio/Trecking.mp3" />
+				</audio>
+				<audio id="joggingClip">
+					<source src="audio/Jogging.mp3" />
+				</audio>
+				<audio id="saunaClip">
+					<source src="audio/Sauna.mp3" />
+				</audio>
+				<audio id="wellnessClip">
+					<source src="audio/Wellness.mp3" />
+				</audio>
+				<audio id="vitaClip">
+					<source src="audio/Vita.mp3" />
+				</audio>
+				<audio id="swimmingClip">
+					<source src="audio/Swimming.mp3" />
+				</audio>
+				<audio id="spinningClip">
+					<source src="audio/Spinning.mp3" />
+				</audio>
+				<audio id="inlineClip">
+					<source src="audio/Inline.mp3" />
+				</audio>
             </body>
         </html>
     </xsl:template>
@@ -121,8 +171,12 @@
                     color: black;
                     text-decoration: none;
                 </xsl:attribute>
+				<xsl:attribute name="onmouseover">
+					play<xsl:value-of select="translate(title/text(), '-', '')" />();
+				</xsl:attribute>
                 <div class="bs-component">
                     <div class="card mb-3">
+						
                         <xsl:element name="img">
                             <xsl:attribute name="style">
                                 min-height: 200px; width: 100%; display: block;
@@ -132,7 +186,7 @@
                             </xsl:attribute>
                         </xsl:element>
                         <h3 class="card-header"><xsl:value-of select="title/text()" /></h3>
-                        <div class="card-body">
+                        <div class="card-body" >
                             <h5 class="card-title"><xsl:value-of select="description/text()" /></h5>
                             <button type="button" class="btn btn-info col-lg-12">
                                 Details und Registrierung
