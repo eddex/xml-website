@@ -34,7 +34,7 @@
 
 	<xsl:template match="/">
 
-			<svg width="15cm" height="10cm"
+			<svg width="20cm" height="15cm"
 			 viewBox="0 0 1000 800" preserveAspectRatio="none"
 			 xmlns="http://www.w3.org/2000/svg" version="1.1"
 			 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -56,7 +56,7 @@
 				text {
 					fill: #000;
 					font-family: times, serif;
-					font-size: 14pt;
+					font-size: 20pt;
 					font-weight: bold;
 					stroke: none;
 					text-anchor: middle;
@@ -105,11 +105,11 @@
 				<g id="labels">
 					<text x="0" y="-320">Allgemein</text>
 					<text x="-320" y="-170">Kursleitung</text>
-					<text x="-320" y="155">Anstrengung</text>
+					<text x="-320" y="185">Anstrengung</text>
 					<!-- <text x="-320" y="170">Technology</text>-->
 					<text x="0" y="340">Preis-Leistung</text>
 					<!--<text x="0" y="355">Support</text>-->
-					<text x="320" y="175">Schwierigkeit</text>
+					<text x="320" y="185">Schwierigkeit</text>
 					<text x="310" y="-170">Spass</text>
 				</g>
 

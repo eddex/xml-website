@@ -69,10 +69,13 @@
                     <div class="bs-component">
                         <div class="card mb-3">
                             <div class="card-body" style="position:relative;">
-                                <div class="container" style="min-height:300px; margin-top:50px;">
-                                  <div class="row">
-                                    <div class="col-lg-5 col-sm-12" style="padding:30px 0;">
-                                      <form role="form" action="php/bewertung.php" method="post" target="_blank">
+                                <div class="container" style="min-height:300px;">
+                                  <div style="text-align:center;">
+                                    <?php printFeedback($id); ?>
+                                  </div>
+                                  <form role="form" style="width:100%" action="php/bewertung.php" method="post" target="_blank">
+                                    <div class="row">
+                                      <div class="col-lg-5 col-sm-12">
                                         <input type="hidden" id="offerId" name="offerId" value="<?php echo htmlspecialchars($_GET['id']) ?>" />
                                         <div id="overall" class="form-check" >
                                             <label for="FirstName" style="width:200px;">Allgemein:</label>
@@ -98,45 +101,41 @@
                                             <label class="radio-inline"><input type="radio" name="radio3" value="4">4</label>
                                             <label class="radio-inline"><input type="radio" name="radio3" value="5">5</label>
                                         </div>
-                                        <div id="fun" class="form-check">
-                                            <label for="FirstName" style="width:200px;">Preis-Leistung:</label>
-                                            <label class="radio-inline"><input type="radio" name="radio4" value="1">1</label>
-                                            <label class="radio-inline"><input type="radio" name="radio4" value="2">2</label>
-                                            <label class="radio-inline"><input type="radio" name="radio4" value="3">3</label>
-                                            <label class="radio-inline"><input type="radio" name="radio4" value="4">4</label>
-                                            <label class="radio-inline"><input type="radio" name="radio4" value="5">5</label>
-                                        </div>
-
-                                        <div id="fun" class="form-check">
-                                            <label for="FirstName" style="width:200px;">Anstrengung:</label>
-                                            <label class="radio-inline"><input type="radio" name="radio5" value="1">1</label>
-                                            <label class="radio-inline"><input type="radio" name="radio5" value="2">2</label>
-                                            <label class="radio-inline"><input type="radio" name="radio5" value="3">3</label>
-                                            <label class="radio-inline"><input type="radio" name="radio5" value="4">4</label>
-                                            <label class="radio-inline"><input type="radio" name="radio5" value="5">5</label>
-                                        </div>
-
-                                        <div id="fun" class="form-check">
-                                            <label for="FirstName" style="width:200px;">Kursleitung:</label>
-                                            <label class="radio-inline"><input type="radio" name="radio6" value="1">1</label>
-                                            <label class="radio-inline"><input type="radio" name="radio6" value="2">2</label>
-                                            <label class="radio-inline"><input type="radio" name="radio6" value="3">3</label>
-                                            <label class="radio-inline"><input type="radio" name="radio6" value="4">4</label>
-                                            <label class="radio-inline"><input type="radio" name="radio6" value="5">5</label>
-                                        </div>
-
-                                        <button type="submit" class="btn btn-primary"  style="margin:20px 0 0 20px;">Bewerten</button>
-                                      </form>
                                     </div>
-                                    <div class="col-lg-7 col-sm-12">
-                                      <?php printFeedback($id); ?>
-                                    </div>
+                                    <div class="col-lg-5 col-sm-12">
+                                      <div id="fun" class="form-check">
+                                          <label for="FirstName" style="width:200px;">Preis-Leistung:</label>
+                                          <label class="radio-inline"><input type="radio" name="radio4" value="1">1</label>
+                                          <label class="radio-inline"><input type="radio" name="radio4" value="2">2</label>
+                                          <label class="radio-inline"><input type="radio" name="radio4" value="3">3</label>
+                                          <label class="radio-inline"><input type="radio" name="radio4" value="4">4</label>
+                                          <label class="radio-inline"><input type="radio" name="radio4" value="5">5</label>
+                                      </div>
+
+                                      <div id="fun" class="form-check">
+                                          <label for="FirstName" style="width:200px;">Anstrengung:</label>
+                                          <label class="radio-inline"><input type="radio" name="radio5" value="1">1</label>
+                                          <label class="radio-inline"><input type="radio" name="radio5" value="2">2</label>
+                                          <label class="radio-inline"><input type="radio" name="radio5" value="3">3</label>
+                                          <label class="radio-inline"><input type="radio" name="radio5" value="4">4</label>
+                                          <label class="radio-inline"><input type="radio" name="radio5" value="5">5</label>
+                                      </div>
+
+                                      <div id="fun" class="form-check">
+                                          <label for="FirstName" style="width:200px;">Kursleitung:</label>
+                                          <label class="radio-inline"><input type="radio" name="radio6" value="1">1</label>
+                                          <label class="radio-inline"><input type="radio" name="radio6" value="2">2</label>
+                                          <label class="radio-inline"><input type="radio" name="radio6" value="3">3</label>
+                                          <label class="radio-inline"><input type="radio" name="radio6" value="4">4</label>
+                                          <label class="radio-inline"><input type="radio" name="radio6" value="5">5</label>
+                                      </div>
                                   </div>
-                                </div>
+                                  <div class="col-lg-2 col-sm-12 align-self-center">
+                                    <button type="submit" class="btn btn-primary"  style="margin:20px 0 0 20px;">Bewerten</button>
+                                  </div>
+                                </form>
+                              </div>
                             </div>
-                        </div>
-                        <div class="card-body">
-
                         </div>
                     </div>
                     <!-- TODO: show feedback in modal when button is pressed (spider diagram).  -->
