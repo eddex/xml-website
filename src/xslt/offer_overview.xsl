@@ -23,7 +23,7 @@
                 <link id="style" rel="stylesheet" href="css/accessibility/none.css" />
 				<script type="text/javascript" src="js/audio.js"> </script>
             </head>
-            <body onload="restoreStyle('big.font.size')">
+            <body onload="restoreStyle('big.font.size');getAudio()">
 
                 <!-- NAVBAR -->
                 <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
@@ -36,24 +36,6 @@
                 <div class="container">
                     <!-- HEAD -->
                     <div class="page-header" id="banner">
-						<div class="row" >
-							<div class="col-lg-3">
-								<p class="bs-component">
-									<button type="button" class="btn btn-primary btn-lg btn-block" onclick="playAudio()">
-										Audio on
-										<span class="glyphicon glyphicon-sunglasses"> </span>
-									</button>
-								</p>
-							</div>
-							<div class="col-lg-3">
-								<p class="bs-component">
-									<button type="button" class="btn btn-primary btn-lg btn-block" onclick="muteAudio()">
-										Audio off
-										<span class="glyphicon glyphicon-sunglasses"> </span>
-									</button>
-								</p>
-							</div>
-						</div>
                         <div class="row">
                             <div class="col-lg-8" onmouseover="playWelcome();">
                                 <h1>Willkommen</h1>
@@ -104,7 +86,13 @@
                                         </button>
                                     </p>
                                 </div>
-								
+								<div class="col-lg-3">
+								<p class="bs-component">
+									<button id="audioButton" type="button" class="btn btn-primary btn-lg btn-block" onclick="changeAudio()">
+										<span class="glyphicon glyphicon-sunglasses"> </span>
+									</button>
+								</p>
+							</div>
                             </div>
                         </div>
                         <!-- OFFERS -->

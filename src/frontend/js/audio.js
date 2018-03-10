@@ -21,14 +21,29 @@ function eraseCookie(name) {
     document.cookie = name+'=; Max-Age=-99999999;';  
 }
 
-function playAudio() {
+function changeAudio() {
   "use strict";
-  setCookie('audioTest', true, 7);
+	var elem = document.getElementById("audioButton");
+	if (getCookie('audioTest'))
+	{
+		elem.innerHTML = "Audio: AUS";
+		setCookie('audioTest', false, 7);
+	}
+	else
+	{
+		elem.innerHTML = "Audio: EIN";
+		setCookie('audioTest', true, 7);
+	}
 }
 
-function muteAudio() {
-  "use strict";
-  setCookie('audioTest', false, 7);
+function getAudio() {
+	var elem = document.getElementById("audioButton");
+	if (getCookie('audioTest')) {
+		elem.innerHTML = "Audio: EIN";
+	}
+	else {
+		elem.innerHTML = "Audio: AUS";
+	}
 }
 
 function stopAudio() {
