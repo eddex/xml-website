@@ -1,14 +1,49 @@
-var cookieName = 'audio';
-var audioStatus = false;
-
-function playAudio() {
-  "use strict";
-  audioStatus = true;
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+function eraseCookie(name) {   
+    document.cookie = name+'=; Max-Age=-99999999;';  
 }
 
-function muteAudio() {
+function changeAudio() {
   "use strict";
-  audioStatus = false;
+	var elem = document.getElementById("audioButton");
+	if (getCookie('audioTest'))
+	{
+		elem.innerHTML = "Audio: AUS";
+		setCookie('audioTest', false, 7);
+	}
+	else
+	{
+		elem.innerHTML = "Audio: EIN";
+		setCookie('audioTest', true, 7);
+	}
+}
+
+function getAudio() {
+	var elem = document.getElementById("audioButton");
+	if (getCookie('audioTest')) {
+		elem.innerHTML = "Audio: EIN";
+	}
+	else {
+		elem.innerHTML = "Audio: AUS";
+	}
 }
 
 function stopAudio() {
@@ -20,7 +55,7 @@ function stopAudio() {
 }
 
 function playWelcome() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("welcomeClip"); 
@@ -29,7 +64,7 @@ function playWelcome() {
 }
 
 function playDesign() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("designClip");
@@ -39,7 +74,7 @@ function playDesign() {
 
 
 function playGroText() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("groTextClip"); 
@@ -49,7 +84,7 @@ function playGroText() {
 
 
 function playHohKontrast() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("hohKontrastClip"); 
@@ -58,7 +93,7 @@ function playHohKontrast() {
 }
 
 function playHohKonGroText() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("hohKonGroTextClip");
@@ -68,7 +103,7 @@ function playHohKonGroText() {
 
 
 function playStandard() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("standardClip"); 
@@ -77,7 +112,7 @@ function playStandard() {
 }
 
 function playBasketball() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("basketballClip");  
@@ -86,7 +121,7 @@ function playBasketball() {
 }
 
 function playHandball() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("handballClip"); 
@@ -95,7 +130,7 @@ function playHandball() {
 }
 
 function playWandern() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("treckingClip"); 
@@ -105,7 +140,7 @@ function playWandern() {
 
 
 function playJoggen() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("joggingClip"); 
@@ -114,7 +149,7 @@ function playJoggen() {
 }
 
 function playSauna() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("saunaClip"); 
@@ -123,7 +158,7 @@ function playSauna() {
 }
 
 function playWellness() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("wellnessClip"); 
@@ -133,7 +168,7 @@ function playWellness() {
 
 
 function playVitaParcours() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("vitaClip"); 
@@ -142,7 +177,7 @@ function playVitaParcours() {
 }
 
 function playSchwimmen() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("swimmingClip"); 
@@ -151,7 +186,7 @@ function playSchwimmen() {
 }
 
 function playSpinning() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("spinningClip"); 
@@ -160,7 +195,7 @@ function playSpinning() {
 }
 
 function playInlineSkating() {
-	if (audioStatus)
+	if (getCookie('audioTest'))
 	{
 		stopAudio();
 		var audio = document.getElementById("inlineClip"); 
