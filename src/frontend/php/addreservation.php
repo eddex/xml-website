@@ -1,6 +1,6 @@
 <?php
     require_once 'transformXmlToPdf.php';
-    addReservation($_POST["FirstName"], $_POST["LastName"], $_POST["Address"], $_POST["City"], $_POST["PLZ"], $_POST["Mail"], $_POST["PhoneNumber"], $_POST["offerId"], $_POST["courseId"]);
+    addReservation($_POST["FirstName"], $_POST["LastName"], $_POST["Address"], $_POST["City"], $_POST["PLZ"], $_POST["Mail"], $_POST["PhoneNumber"], $_POST["offerId_modal"], $_POST["courseId_modal"]);
 
     function addReservation($FirstName, $LastName, $Address, $City, $PLZ, $Mail, $PhoneNumber, $OfferId, $CourseId) {
         // file path, hardcoded because we only have 1 reservation file and this should not change

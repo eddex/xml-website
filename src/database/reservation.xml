@@ -27,4 +27,4 @@
         <Mail>bborton@gmail.com</Mail>
         <PhoneNumber>1230004444</PhoneNumber>
     </Reservation>
-<Reservation offerId="" courseId="5"><FirstName/><LastName/><Address/><City/><PLZ/><Mail/><PhoneNumber/></Reservation></Reservations>
+</Reservations>
