@@ -26,12 +26,12 @@ function changeAudio() {
 	var elem = document.getElementById("audioButton");
 	if (getCookie('audioTest'))
 	{
-		elem.innerHTML = "Audio: AUS";
+		elem.innerHTML = "Audio: AUS <span class='glyphicon glyphicon-volume-off' />";
 		setCookie('audioTest', false, 7);
 	}
 	else
 	{
-		elem.innerHTML = "Audio: EIN";
+		elem.innerHTML = "Audio: EIN <span class='glyphicon glyphicon-volume-up' />";
 		setCookie('audioTest', true, 7);
 	}
 }
@@ -39,10 +39,10 @@ function changeAudio() {
 function getAudio() {
 	var elem = document.getElementById("audioButton");
 	if (getCookie('audioTest')) {
-		elem.innerHTML = "Audio: EIN";
+		elem.innerHTML = "Audio: EIN <span class='glyphicon glyphicon-volume-up' />";
 	}
 	else {
-		elem.innerHTML = "Audio: AUS";
+		elem.innerHTML = "Audio: AUS <span class='glyphicon glyphicon-volume-off' />";
 	}
 }
 
