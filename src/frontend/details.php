@@ -158,8 +158,8 @@
                             <h3><span class="glyphicon glyphicon-lock"> </span> Reservation Erfassen</h3>
                         </div>
                         <form role="form" action="php/addreservation.php" method="post" target="_blank">
-                            <input type="hidden" id="courseId" name="courseId" value="" />
-                            <input type="hidden" id="offerId" name="offerId" value="" />
+                            <input type="hidden" id="courseId_modal" name="courseId_modal" value="" />
+                            <input type="hidden" id="offerId_modal" name="offerId_modal" value="" />
                             <div class="modal-body" style="padding:40px 50px;">
                                 <h5 id="title" name="title"></h5>
                                 <br/>
@@ -206,8 +206,8 @@
             <script type="text/javascript">
                 $(document).ready(function(){
                     $(".addreservationbutton").click(function(){ // Click to only happen on reservation buttons
-                        $("#courseId").val($(this).data('courseid'));
-                        $("#offerId").val($(this).data('offerid'));
+                        $("#courseId_modal").val($(this).data('courseid'));
+                        $("#offerId_modal").val($(this).data('offerid'));
                         $("#title").text($(this).data('title'));
                         $('#myModal').modal('show');
                     });
