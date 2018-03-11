@@ -89,7 +89,7 @@
 								<div class="col-lg-3">
 								<p class="bs-component">
 									<button id="audioButton" type="button" class="btn btn-primary btn-lg btn-block" onclick="changeAudio()">
-										<span class="glyphicon glyphicon-sunglasses"> </span>
+										Audio: AUS <span class="glyphicon glyphicon-volume-off"> </span>
 									</button>
 								</p>
 							</div>
