@@ -21,9 +21,6 @@
         </div>
     </div>
 
-    <!-- Everything after this line is only displayed if an order id is present -->
-
-    <!-- TODO: add offer with description, text to speech, rating and order form -->
     <!-- CONTENT -->
     <div class="container">
 
@@ -39,6 +36,7 @@
             return;
         }
         ?>
+        <!-- Everything after this line is only displayed if an order id is present -->
 
         <!-- HEAD -->
         <div class="page-header" id="banner">
@@ -138,9 +136,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- TODO: show feedback in modal when button is pressed (spider diagram).  -->
-                    <!-- TODO: feedback form.  -->
-
                 </div>
             </div>
         </div>
@@ -166,7 +161,7 @@
                             <input type="hidden" id="courseId" name="courseId" value="" />
                             <input type="hidden" id="offerId" name="offerId" value="" />
                             <div class="modal-body" style="padding:40px 50px;">
-                                <h6 id="title" name="title"></h6>
+                                <h5 id="title" name="title"></h5>
                                 <br/>
                                 <div class="form-group">
                                     <label for="FirstName"><span class="glyphicon glyphicon-user"> </span> FirstName</label>

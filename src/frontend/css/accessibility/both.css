@@ -13,7 +13,7 @@
     border-color: #2A9FD6;
 }
 
-.lead, .btn, h5, .navbar-brand, label {
+.lead, .btn, h5, .navbar-brand, label, span, .form-control {
     font-size: 1.7rem !important;
 }
 

@@ -1,5 +1,5 @@
 /* overrides some rules of the bootstrap framework to create a theme with bigger font sizes. */
 
-.lead, .btn, h5, .navbar-brand, label {
+.lead, .btn, h5, .navbar-brand, label, span, .form-control {
     font-size: 1.7rem !important;
 }

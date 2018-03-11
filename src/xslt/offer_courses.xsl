@@ -12,38 +12,31 @@
 
     <!-- transformation -->
     <xsl:template match="/">
-        <html>
-            <head>
-                <!-- CSS FRAMEWORKS -->
-                <link rel="stylesheet" href="css/lib/flatly.bootstrap.min.css" />
-                <link rel="stylesheet" href="css/lib/flatly.custom.min.css" />
-                <link rel="stylesheet" href="css/lib/glyphicon.css" />
-                <!-- ACCESSIBILITY STYLES -->
-                <link id="style" rel="stylesheet" href="css/accessibility/none.css" />
-            </head>
-            <body>
-                <hr width="100%" />
-                <xsl:apply-templates select="$chosenCourses"/>
-            </body>
-        </html>
+        <hr width="100%" />
+        <xsl:apply-templates select="$chosenCourses"/>
     </xsl:template>
-
 
     <!-- display all offers  -->
     <xsl:template match="//course">
         <div class="row">
-            <div class="col-sm-3" align="left">
-                <xsl:value-of select="../title/text()" /> - <xsl:value-of select="@courseId" />
+            <div class="col-lg-3" align="left">
+                <span>
+                    <xsl:value-of select="../title/text()" /> - <xsl:value-of select="@courseId" />
+                </span>
             </div>
-            <div class="col-sm-3" align="center">
-                <xsl:value-of select="@date" /><xsl:text>,     </xsl:text>
-                <xsl:value-of select="@time" /> Uhr
+            <div class="col-lg-4" align="center">
+                <span>
+                    <xsl:value-of select="@date" /><xsl:text>,     </xsl:text>
+                    <xsl:value-of select="@time" /> Uhr
+                </span>
             </div>
-            <div class="col-sm-3" align="center">
-                <xsl:value-of select="../price" /> CHF
+            <div class="col-lg-2" align="center">
+                <span>
+                    <xsl:value-of select="../price" /> CHF
+                </span>
             </div>
-            <div class="col-sm-3" align="right">
-                <button type="button" class="btn btn-default btn-sm addreservationbutton">
+            <div class="col-lg-3" align="right">
+                <button type="button" class="btn btn-primary btn-sm addreservationbutton">
                     <xsl:attribute name="data-courseid">
                         <xsl:value-of select="@courseId" />
                     </xsl:attribute>
@@ -61,6 +54,5 @@
         </div>
         <hr width="100%" />
     </xsl:template>
-
 
 </xsl:stylesheet>
